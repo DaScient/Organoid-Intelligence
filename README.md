@@ -105,7 +105,7 @@ The repository brings together 24 chapters across 8 thematic parts, 5 appendices
 
 ```bash
 # Clone the repository
-git clone https://github.com/DaScientist/Organoid-Intelligence.git
+git clone https://github.com/DaScient/Organoid-Intelligence.git
 cd Organoid-Intelligence
 
 # Install visualization dependencies
@@ -174,7 +174,7 @@ If you use this repository or textbook in your research, please cite:
   year      = {2026},
   publisher = {DaScient Press Ltd.},
   copyright = {2026 DaScient, LLC},
-  url       = {https://github.com/DaScientist/Organoid-Intelligence}
+  url       = {https://github.com/DaScient/Organoid-Intelligence}
 }
 ```
 
