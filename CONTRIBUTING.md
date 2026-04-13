@@ -10,7 +10,7 @@ By participating in this project, you agree to abide by our [Code of Conduct](CO
 
 ### Reporting Issues
 
-- Use the [GitHub Issues](https://github.com/DaScientist/Organoid-Intelligence/issues) tracker.
+- Use the [GitHub Issues](https://github.com/DaScient/Organoid-Intelligence/issues) tracker.
 - Search existing issues before opening a new one.
 - Use the appropriate issue template if available.
 - Include sufficient detail: what you expected, what happened, how to reproduce.
