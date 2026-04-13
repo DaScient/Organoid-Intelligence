@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this repository in your research, please cite it as below."
+authors:
+  - family-names: Tadaya
+    given-names: Don M.
+title: "Organoid Intelligence: Biological Computing In Living Systems"
+version: 1.0.0
+date-released: 2026-01-01
+publisher: "DaScient Press Ltd."
+license: Apache-2.0
+url: "https://github.com/DaScientist/Organoid-Intelligence"
