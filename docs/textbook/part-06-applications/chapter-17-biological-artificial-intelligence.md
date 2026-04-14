@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Dish That Learned to Play
+## The Dish That Learned to Play
 
 In October 2022, a paper in the journal *Neuron* sent ripples through both neuroscience and artificial intelligence communities. A team led by Brett **Kagan** at Cortical Labs in Melbourne, Australia, reported that a monolayer of approximately 800,000 human cortical neurons — derived from induced pluripotent stem cells and cultured on a high-density multi-electrode array (MEA) — had learned to play the classic arcade game *Pong* (Kagan et al., 2022). The system, dubbed **DishBrain**, received sensory input about the ball's position as electrical stimulation patterns across the electrode array and produced motor output by modulating its firing patterns in designated "motor" regions. Within five minutes of play, the neurons began returning the paddle toward the ball with increasing accuracy. There was no gradient descent, no loss function, no backpropagation — just living human tissue, adapting in real time through the same synaptic plasticity mechanisms that evolution had honed over hundreds of millions of years.
 
