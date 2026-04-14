@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Prototype in Melbourne
+## Prototype in Melbourne
 
 In March 2022, a cluster of roughly 800,000 cortical neurons, cultured on a multi-electrode array in a Melbourne laboratory, learned to play the video game *Pong*. The DishBrain system, built by Brett Kagan and his team at **Cortical Labs**, was not powerful by any conventional measure. It could not solve differential equations, render a web page, or parse a database query. Its reaction times were sluggish, its paddle movements imprecise, and its "learning" — a measurable reduction in rally duration over several hundred trials — would have embarrassed any six-year-old with a joystick. Yet the experiment electrified the world, because it demonstrated something no silicon chip had ever done on its own: a biological substrate had learned, in real time, from sensory feedback, without being explicitly programmed.
 
