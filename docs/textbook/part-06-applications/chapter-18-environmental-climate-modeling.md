@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Energy Paradox
+## Energy Paradox
 
 In the summer of 2023, the European Centre for Medium-Range Weather Forecasts (ECMWF) completed a landmark simulation: the first global climate projection at a horizontal resolution of 1 km, running on the LUMI supercomputer in Kajaani, Finland. LUMI, one of the most powerful machines in Europe, consumed approximately 6 MW of electrical power during the run — enough to light a small town. The simulation modeled decades of future precipitation, wind, and temperature patterns, producing petabytes of output data that would take climate scientists years to fully analyze. The irony was not lost on the researchers: the electricity powering their simulation came, in part, from a grid still dependent on fossil fuels, and the computation itself contributed measurably to the very carbon emissions the model was designed to predict.
 
