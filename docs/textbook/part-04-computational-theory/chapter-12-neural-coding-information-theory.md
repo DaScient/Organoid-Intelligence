@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Language of Nerve Impulses
+## Language of Nerve Impulses
 
 On a damp afternoon in Cambridge in 1925, Edgar Douglas Adrian threaded a fine capillary electrode into the nerve fibre of a frog's muscle receptor. The oscilloscope trace that flickered before him carried a revelation that would reshape neuroscience: regular, discrete voltage spikes whose frequency rose and fell in lock-step with the stretch applied to the muscle. Adrian was not the first to record nerve impulses — that honor belonged to his mentor Keith Lucas and, before him, to Emil du Bois-Reymond in 1849 — but he was the first to demonstrate unambiguously that the nervous system encodes the *intensity* of a stimulus not through the *size* of individual spikes, which are stereotyped all-or-nothing events, but through the *rate* at which they occur (Adrian, 1926). A gentle stretch produced a lazy trickle of spikes; a strong stretch, a furious barrage. The biological wire, it seemed, spoke in Morse code — and the key parameter was how fast the telegraph operator tapped.
 
