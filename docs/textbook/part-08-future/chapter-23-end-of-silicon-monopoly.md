@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Transistor's Long Reign
+## The Transistor's Long Reign
 
 On December 16, 1947, John Bardeen and Walter Brattain demonstrated the first working transistor at Bell Laboratories — a crude germanium point-contact device that amplified a signal by a factor of roughly 100. Their supervisor, William Shockley, soon developed the junction transistor, and the three shared the 1956 Nobel Prize in Physics. Within two decades, the silicon transistor had displaced vacuum tubes, magnetic cores, and every competing technology to become the universal substrate of computation. By 2025, the semiconductor industry was fabricating approximately $10^{22}$ transistors per year — more than the number of grains of sand on Earth's beaches — and silicon had maintained its monopoly over digital computation for over seven decades (Waldrop, 2016).
 
