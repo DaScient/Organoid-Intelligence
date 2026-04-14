@@ -3,18 +3,18 @@
    ==========================================================================
    Table of Contents:
    1.  Typing Effect & Loading Screen
-   4.  Enhanced Counter Animation (animateStats) & Stats Observer
-   5.  Tab Switching (switchTab)
-   6.  Gallery Filter (filterGallery)
-   7.  Interactive Neural Network Canvas Background
-   8.  Scroll-Triggered Reveal Animations
-   9.  Mouse Parallax on Hero Section
-   10. 3D Card Tilt Effect
-   11. Progress Bar
-   12. Scroll-to-Top Button
-   13. Magnetic Button Effect
-   15. Active Tab Underline Animation (CSS injection)
-   17. Smooth-Scroll Nav & Scroll Spy
+   2.  Enhanced Counter Animation (animateStats) & Stats Observer
+   3.  Tab Switching (switchTab)
+   4.  Gallery Filter (filterGallery)
+   5.  Interactive Neural Network Canvas Background
+   6.  Scroll-Triggered Reveal Animations
+   7.  Mouse Parallax on Hero Section
+   8.  3D Card Tilt Effect
+   9.  Progress Bar
+   10. Scroll-to-Top Button
+   11. Magnetic Button Effect
+   12. Active Tab Underline Animation (CSS injection)
+   13. Smooth-Scroll Nav & Scroll Spy
    ========================================================================== */
 
 (function () {
@@ -46,7 +46,7 @@ window.addEventListener('load', function () {
 });
 
 /* --------------------------------------------------------------------------
-   4. ENHANCED COUNTER ANIMATION (animateStats) & STATS OBSERVER
+   2. ENHANCED COUNTER ANIMATION (animateStats) & STATS OBSERVER
    -------------------------------------------------------------------------- */
 function easeOutExpo(t) {
    return t === 1 ? 1 : 1 - Math.pow(2, -10 * t);
@@ -107,7 +107,7 @@ function initStatsObserver() {
 }
 
 /* --------------------------------------------------------------------------
-   5. TAB SWITCHING
+   3. TAB SWITCHING
    -------------------------------------------------------------------------- */
 function switchTab(btn, tabId) {
    document.querySelectorAll('.tab-btn').forEach(function (b) { b.classList.remove('active'); });
@@ -119,7 +119,7 @@ function switchTab(btn, tabId) {
 window.switchTab = switchTab;
 
 /* --------------------------------------------------------------------------
-   6. GALLERY FILTER
+   4. GALLERY FILTER
    -------------------------------------------------------------------------- */
 function filterGallery(category, btn) {
    document.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.remove('active'); });
@@ -142,7 +142,7 @@ window.filterGallery = filterGallery;
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   7. INTERACTIVE NEURAL NETWORK CANVAS BACKGROUND
+   5. INTERACTIVE NEURAL NETWORK CANVAS BACKGROUND
    -------------------------------------------------------------------------- */
 var canvas, ctx, particles, animFrameId;
 var mouse = { x: -9999, y: -9999 };
@@ -273,7 +273,7 @@ function animateCanvas() {
 }
 
 /* --------------------------------------------------------------------------
-   8. SCROLL-TRIGGERED REVEAL ANIMATIONS
+   6. SCROLL-TRIGGERED REVEAL ANIMATIONS
    -------------------------------------------------------------------------- */
 function injectRevealCSS() {
    var style = document.createElement('style');
@@ -326,7 +326,7 @@ function observeReveals() {
 }
 
 /* --------------------------------------------------------------------------
-   9. MOUSE PARALLAX ON HERO SECTION
+   7. MOUSE PARALLAX ON HERO SECTION
    -------------------------------------------------------------------------- */
 function initHeroParallax() {
    var heroVisual = document.querySelector('.intro-hero-visual');
@@ -361,7 +361,7 @@ function initHeroParallax() {
 }
 
 /* --------------------------------------------------------------------------
-   10. 3D CARD TILT EFFECT
+   8. 3D CARD TILT EFFECT
    -------------------------------------------------------------------------- */
 function initCardTilt() {
    var tiltSelectors = '.menu-item, .value-card, .testimonial-card';
@@ -404,7 +404,7 @@ function initCardTilt() {
 }
 
 /* --------------------------------------------------------------------------
-   11. PROGRESS BAR
+   9. PROGRESS BAR
    -------------------------------------------------------------------------- */
 var progressBar = null;
 
@@ -433,7 +433,7 @@ function updateProgressBar() {
 }
 
 /* --------------------------------------------------------------------------
-   12. SCROLL-TO-TOP BUTTON
+   10. SCROLL-TO-TOP BUTTON
    -------------------------------------------------------------------------- */
 var scrollTopBtn = null;
 
@@ -477,7 +477,7 @@ function initScrollTopBtn() {
 }
 
 /* --------------------------------------------------------------------------
-   13. MAGNETIC BUTTON EFFECT
+   11. MAGNETIC BUTTON EFFECT
    -------------------------------------------------------------------------- */
 function initMagneticButtons() {
    var selectors = '.intro-cta-primary, .intro-cta-secondary, .submit-btn';
@@ -505,7 +505,7 @@ function initMagneticButtons() {
 }
 
 /* --------------------------------------------------------------------------
-   15. ACTIVE TAB UNDERLINE ANIMATION (CSS injection)
+   12. ACTIVE TAB UNDERLINE ANIMATION (CSS injection)
    -------------------------------------------------------------------------- */
 function injectTabUnderlineCSS() {
    var style = document.createElement('style');
@@ -518,7 +518,7 @@ function injectTabUnderlineCSS() {
 }
 
 /* --------------------------------------------------------------------------
-   17. SMOOTH-SCROLL NAV & SCROLL SPY
+   13. SMOOTH-SCROLL NAV & SCROLL SPY
    -------------------------------------------------------------------------- */
 function initSmoothScrollNav() {
    var navLinks = document.querySelectorAll('.nav-link');
