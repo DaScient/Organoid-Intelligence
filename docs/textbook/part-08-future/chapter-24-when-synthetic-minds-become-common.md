@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Quiet Threshold
+## Silent Threshold
 
 In the spring of 2057, the World Health Organization announced that the millionth patient had received a personalized treatment regimen designed by a biological neural network — an organoid-based system grown from the patient's own induced pluripotent stem cells, trained on genomic and proteomic data, and tasked with identifying therapeutic interventions that no silicon-based algorithm had flagged. The announcement was buried on page nine of the major newspapers. No one marched in the streets. No philosopher published an urgent op-ed. The millionth patient simply recovered from a rare autoimmune disorder and went home to her family in Nairobi. The extraordinary had become ordinary.
 
