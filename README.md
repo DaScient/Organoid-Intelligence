@@ -12,7 +12,7 @@
 
 ## 📖 About This Repository
 
-This repository is the official open-source companion to **"Organoid Intelligence: Biological Computing In Living Systems"** — a research-grade textbook that explores the frontier of biological computing using brain organoids. It bridges cutting-edge neuroscience, bioengineering, computational theory, and ethics to present a comprehensive treatment of Organoid Intelligence (OI) as an emerging paradigm in computing.
+This repository is the official open-source companion to **"Organoid Intelligence: Biological Computing In Living Systems"** — a textbook that explores the frontier of biological computing using brain organoids. It bridges cutting-edge neuroscience, bioengineering, computational theory, and ethics to present a comprehensive treatment of Organoid Intelligence (OI) as an emerging paradigm in computing.
 
 **Organoid Intelligence** refers to the use of lab-grown three-dimensional brain tissue — known as cerebral organoids — as biological computing substrates. These living systems, derived from human induced pluripotent stem cells (iPSCs), can form spontaneous neural networks, exhibit learning-like plasticity, and process information through mechanisms that evolution has refined over hundreds of millions of years. The energy efficiency, adaptability, and parallelism of biological neural computation represent a fundamentally different approach to information processing compared to silicon-based architectures.
 
