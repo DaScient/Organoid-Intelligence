@@ -25,7 +25,7 @@ These questions are not new, but the advent of organoid intelligence gives them 
 
 ### 20.1.1 The Henrietta Lacks Case and Its Legacy
 
-The story of Henrietta Lacks has become, in the words of bioethicist Robert Skloot, "the most important story in the history of medical ethics you've never heard of" — until, that is, Rebecca Skloot's 2010 bestseller *The Immortal Life of Henrietta Lacks* brought it to public attention. The case illustrates several failures that remain relevant to organoid intelligence research:
+The story of Henrietta Lacks has become, in the words of science writer Rebecca Skloot, "the most important story in the history of medical ethics you've never heard of" — a story brought to public attention by Skloot's 2010 bestseller *The Immortal Life of Henrietta Lacks* brought it to public attention. The case illustrates several failures that remain relevant to organoid intelligence research:
 
 1. **Absence of informed consent.** Lacks was never told that her tissue would be used for research, let alone commercialized. In 1951, there were no federal regulations requiring informed consent for tissue samples, and the concept of patient autonomy in research was not yet established in American law (Faden & Beauchamp, 1986).
 
