@@ -1810,3 +1810,94 @@ body {
 		max-width: 250px;
 	}
 }
+
+/* ===== OI Showcase Additions ===== */
+
+/* Resource card inner (replaces gallery images) */
+.resource-card-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background: linear-gradient(135deg, rgba(0,240,255,0.08), rgba(255,0,212,0.08));
+    border-radius: 16px 16px 0 0;
+}
+
+/* About parts list panel */
+.about-parts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.about-part-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.85rem 1.2rem;
+    background: rgba(255,255,255,0.03);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.85);
+    transition: background 0.2s ease;
+}
+
+.about-part-item:last-child {
+    border-bottom: none;
+}
+
+.about-part-item:hover {
+    background: rgba(0,240,255,0.06);
+}
+
+.about-part-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(0,240,255,0.2), rgba(255,0,212,0.2));
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #00f0ff;
+    flex-shrink: 0;
+}
+
+.about-part-ch {
+    margin-left: auto;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.4);
+    flex-shrink: 0;
+}
+
+/* Chapter link rows hover */
+a.service-row:hover {
+    background: rgba(0,240,255,0.06);
+}
+
+/* Capstone card links */
+a.testimonial-card {
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+a.testimonial-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0,240,255,0.3);
+}
+
+/* Resource gallery items as links */
+a.gallery-item {
+    cursor: pointer;
+}
+
+/* 5-column capstone grid */
+@media (min-width: 993px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
