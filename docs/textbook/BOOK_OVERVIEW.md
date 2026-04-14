@@ -10,7 +10,7 @@
 
 ## About This Textbook
 
-*Organoid Intelligence: Biological Computing In Living Systems* is the first comprehensive, research-grade textbook to treat **organoid intelligence (OI)** as a unified field — bridging neuroscience, bioengineering, computational theory, ethics, and speculative futures into a single pedagogical framework. It is designed for upper-division undergraduates, graduate students, postdoctoral researchers, and industry engineers who wish to understand, contribute to, or critically evaluate one of the most provocative frontiers in 21st-century computing.
+*Organoid Intelligence: Biological Computing In Living Systems* is the first exploratory textbook to treat **organoid intelligence (OI)** as a unified field — bridging neuroscience, bioengineering, computational theory, ethics, and speculative futures into a single pedagogical framework. It is designed for upper-division undergraduates, graduate students, postdoctoral researchers, and industry engineers who wish to understand, contribute to, or critically evaluate one of the most provocative frontiers in 21st-century computing.
 
 The book asks a deceptively simple question: **Can living brain tissue compute?** And if so, what does that mean — for science, for technology, and for humanity?
 
