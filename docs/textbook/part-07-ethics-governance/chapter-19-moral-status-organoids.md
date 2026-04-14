@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Cambridge Declaration and the Unfinished Question
+## The Cambridge Declaration and the Unfinished Question
 
 On July 7, 2012, a group of prominent neuroscientists gathered at Churchill College, Cambridge, to sign a document that would reshape scientific discourse on animal consciousness. The *Cambridge Declaration on Consciousness*, written by Philip Low and endorsed by figures including Stephen Hawking, Christof Koch, and Jaak Panksepp, concluded:
 
