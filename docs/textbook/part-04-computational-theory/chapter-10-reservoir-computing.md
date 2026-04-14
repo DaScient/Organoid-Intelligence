@@ -935,7 +935,7 @@ The program computes the memory capacity of a 200-neuron ESN across spectral rad
 
 3. **The observation bottleneck:** Current MEA technology allows recording from at most a few thousand neurons in a brain organoid containing hundreds of thousands. How does this partial observability affect the reservoir's effective computational capacity? Is there a theoretical framework for quantifying the information lost through incomplete state observation?
 
-4. **Scalability:** Echo state networks with $N = 10{,}000$ neurons are routine in simulation, but biological reservoirs may contain $10^6$ or more neurons. What new computational capabilities might emerge at this scale? Are there tasks that require biological-scale reservoirs that digital ESNs cannot match?
+4. **Scalability:** Echo state networks with $N = 10,\!000$ neurons are routine in simulation, but biological reservoirs may contain $10^6$ or more neurons. What new computational capabilities might emerge at this scale? Are there tasks that require biological-scale reservoirs that digital ESNs cannot match?
 
 5. **The edge of chaos in development:** Brain organoids develop over weeks to months, transitioning through different dynamical regimes. How does the reservoir's computational capacity change during development? Is there an optimal developmental stage for reservoir computing, and does it coincide with the emergence of criticality?
 
