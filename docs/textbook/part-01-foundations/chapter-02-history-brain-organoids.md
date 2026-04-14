@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Dish That Dreamed
+## The Dish That Dreamed
 
 On a humid summer day in 2013, a young postdoctoral researcher at the Institute of Molecular Biotechnology (IMBA) in Vienna peered through a microscope at something no human being had ever seen before: a tiny ball of tissue, barely visible to the naked eye, that had spontaneously organized itself into a structure resembling a miniature brain.
 
