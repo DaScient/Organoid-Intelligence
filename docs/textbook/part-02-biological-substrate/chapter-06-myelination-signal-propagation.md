@@ -686,7 +686,8 @@ import matplotlib.pyplot as plt
 
 def alpha_m(V):
     """Rate constant for Na+ activation gate opening (ms^-1)."""
-    return 0.1 * (25.0 - V) / (np.exp((25.0 - V) / 10.0) - 1.0)
+    x = 25.0 - V
+    return np.where(np.abs(x) < 1e-7, 1.0, 0.1 * x / (np.exp(x / 10.0) - 1.0))
 
 
 def beta_m(V):
@@ -706,7 +707,8 @@ def beta_h(V):
 
 def alpha_n(V):
     """Rate constant for K+ activation gate opening (ms^-1)."""
-    return 0.01 * (10.0 - V) / (np.exp((10.0 - V) / 10.0) - 1.0)
+    x = 10.0 - V
+    return np.where(np.abs(x) < 1e-7, 0.1, 0.01 * x / (np.exp(x / 10.0) - 1.0))
 
 
 def beta_n(V):
@@ -714,8 +716,8 @@ def beta_n(V):
     return 0.125 * np.exp(-V / 80.0)
 
 
-def simulate_unmyelinated(axon_length_mm=20.0, duration_ms=15.0, dx_um=10.0,
-                          dt_ms=0.005, diameter_um=10.0):
+def simulate_unmyelinated(axon_length_mm=10.0, duration_ms=15.0, dx_um=100.0,
+                          dt_ms=0.002, diameter_um=10.0):
     """
     Simulate continuous conduction along an unmyelinated axon using
     the Hodgkin-Huxley model.
@@ -763,8 +765,9 @@ def simulate_unmyelinated(axon_length_mm=20.0, duration_ms=15.0, dx_um=10.0,
     Cm = 1.0       # uF/cm^2
     Ra = 100.0     # Ohm*cm (axial resistivity)
 
-    # Cable coupling constant
-    coupling = (d_cm / (4.0 * Ra * Cm)) / (dx_cm ** 2)
+    # Cable coupling constant (factor of 1e3 converts Ra from Ohm*cm to
+    # kOhm*cm for consistency with mV/ms/uF/mS unit system)
+    coupling = (d_cm / (4.0 * Ra * Cm)) / (dx_cm ** 2) * 1e3
 
     # Initialize state variables
     V = np.zeros((Nx, Nt))
@@ -777,11 +780,11 @@ def simulate_unmyelinated(axon_length_mm=20.0, duration_ms=15.0, dx_um=10.0,
     h[:] = alpha_h(0) / (alpha_h(0) + beta_h(0))
     n[:] = alpha_n(0) / (alpha_n(0) + beta_n(0))
 
-    # Stimulus: inject current at the left end for the first 0.5 ms
+    # Stimulus: inject current at the left end for the first 1 ms
     I_stim = np.zeros((Nx, Nt))
-    stim_duration = int(0.5 / dt_ms)
-    stim_region = int(Nx * 0.02)  # first 2% of axon
-    I_stim[:stim_region, :stim_duration] = 20.0  # uA/cm^2
+    stim_duration = int(1.0 / dt_ms)
+    stim_region = max(2, int(Nx * 0.02))  # first 2% of axon
+    I_stim[:stim_region, :stim_duration] = 100.0  # uA/cm^2
 
     # Time-stepping loop
     for j in range(Nt - 1):
@@ -949,6 +952,9 @@ def plot_conduction_comparison(x_unmyel, t_unmyel, V_unmyel,
     # Calculate and print conduction velocities
     print("\n--- Conduction Velocity Estimates ---")
 
+    v_unmyel = None
+    v_myel = None
+
     # Unmyelinated: find time of peak voltage at two distant positions
     pos1, pos2 = len(x_unmyel) // 4, 3 * len(x_unmyel) // 4
     t_peak1 = t_unmyel[np.argmax(V_unmyel[pos1, :])]
@@ -958,6 +964,8 @@ def plot_conduction_comparison(x_unmyel, t_unmyel, V_unmyel,
     if dt_peak > 0:
         v_unmyel = dist_mm / dt_peak  # mm/ms = m/s
         print(f"Unmyelinated: v = {dist_mm:.1f} mm / {dt_peak:.2f} ms = {v_unmyel:.1f} m/s")
+    else:
+        print("Unmyelinated: conduction velocity could not be estimated (no propagation detected)")
 
     # Myelinated: find time of peak at two distant nodes
     n1, n2 = len(x_myel) // 4, 3 * len(x_myel) // 4
@@ -968,19 +976,22 @@ def plot_conduction_comparison(x_unmyel, t_unmyel, V_unmyel,
     if dt_peak_m > 0:
         v_myel = dist_mm_m / dt_peak_m
         print(f"Myelinated:   v = {dist_mm_m:.1f} mm / {dt_peak_m:.2f} ms = {v_myel:.1f} m/s")
-        print(f"Speedup factor: {v_myel / v_unmyel:.1f}x")
+        if v_unmyel is not None and v_unmyel > 0:
+            print(f"Speedup factor: {v_myel / v_unmyel:.1f}x")
+    else:
+        print("Myelinated: conduction velocity could not be estimated (no propagation detected)")
 
 
 if __name__ == "__main__":
     print("Simulating unmyelinated axon (continuous conduction)...")
     x_u, t_u, V_u = simulate_unmyelinated(
-        axon_length_mm=20.0, duration_ms=15.0, dx_um=20.0, dt_ms=0.005
+        axon_length_mm=10.0, duration_ms=15.0, dx_um=100.0, dt_ms=0.002
     )
     print(f"  Grid: {V_u.shape[0]} spatial points x {V_u.shape[1]} time steps")
 
     print("Simulating myelinated axon (saltatory conduction)...")
     x_m, t_m, V_m = simulate_myelinated(
-        axon_length_mm=20.0, duration_ms=5.0, dt_ms=0.005, n_nodes=20
+        axon_length_mm=10.0, duration_ms=5.0, dt_ms=0.002, n_nodes=20
     )
     print(f"  Grid: {V_m.shape[0]} nodes x {V_m.shape[1]} time steps")
 
