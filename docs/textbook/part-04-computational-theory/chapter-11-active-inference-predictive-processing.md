@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Physicist Who Heard the Brain Thinking
+## The Physicist Who Heard the Brain Thinking
 
 In 1867, the German physicist and physician Hermann von Helmholtz stood before the Berlin Physical Society and presented a theory so radical that it would take neuroscience more than a century to catch up. Helmholtz, already famous for measuring the speed of nerve impulses — a feat that earned him the enmity of his former teacher Johannes Müller, who had declared such measurement forever impossible — had turned his formidable intellect to the problem of perception. How, he asked, does the brain construct a stable, three-dimensional world from the flickering, two-dimensional, inverted images on the retina?
 
