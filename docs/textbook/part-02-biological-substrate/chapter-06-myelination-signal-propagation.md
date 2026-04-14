@@ -687,6 +687,7 @@ import matplotlib.pyplot as plt
 def alpha_m(V):
     """Rate constant for Na+ activation gate opening (ms^-1)."""
     x = 25.0 - V
+    # L'Hôpital limit: lim_{x→0} 0.1*x/(exp(x/10)-1) = 0.1*10 = 1.0
     return np.where(np.abs(x) < 1e-7, 1.0, 0.1 * x / (np.exp(x / 10.0) - 1.0))
 
 
@@ -708,6 +709,7 @@ def beta_h(V):
 def alpha_n(V):
     """Rate constant for K+ activation gate opening (ms^-1)."""
     x = 10.0 - V
+    # L'Hôpital limit: lim_{x→0} 0.01*x/(exp(x/10)-1) = 0.01*10 = 0.1
     return np.where(np.abs(x) < 1e-7, 0.1, 0.01 * x / (np.exp(x / 10.0) - 1.0))
 
 
@@ -783,7 +785,7 @@ def simulate_unmyelinated(axon_length_mm=10.0, duration_ms=15.0, dx_um=100.0,
     # Stimulus: inject current at the left end for the first 1 ms
     I_stim = np.zeros((Nx, Nt))
     stim_duration = int(1.0 / dt_ms)
-    stim_region = max(2, int(Nx * 0.02))  # first 2% of axon
+    stim_region = max(2, int(Nx * 0.02))  # first 2% of axon (min 2 for spatial gradient)
     I_stim[:stim_region, :stim_duration] = 100.0  # uA/cm^2
 
     # Time-stepping loop
