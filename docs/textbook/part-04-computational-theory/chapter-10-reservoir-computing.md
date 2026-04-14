@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Reservoir That Did Not Need to Learn
+## The Reservoir That Did Not Need to Learn
 
 In the winter of 2000, Herbert Jaeger sat in his office at the International University Bremen in Germany, staring at a simulation that should not have worked. For months, he had been grappling with a paradox at the heart of recurrent neural networks. Everyone knew that recurrent networks were theoretically powerful — they could, in principle, approximate any dynamical system, store context over time, and compute functions that feedforward architectures could never touch. But everyone also knew that training them was a nightmare. The backpropagation-through-time algorithm, painstakingly derived in the 1980s, demanded unrolling the network across every time step, computing gradients that either vanished into insignificance or exploded into numerical chaos. Graduate students spent entire dissertations taming a single recurrent network to perform a modest time-series prediction.
 
