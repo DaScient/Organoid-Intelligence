@@ -1,4 +1,4 @@
-# 🧠 Organoid Intelligence: Biological Computing In Living Systems
+# Organoid Intelligence: Biological Computing In Living Systems
 
 **Author:** Don M. Tadaya | **Publisher:** DaScient Press Ltd. | **Copyright © 2026 DaScient, LLC**
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 📖 About This Repository
+## About This Repository
 
 This repository is the official open-source companion to **"Organoid Intelligence: Biological Computing In Living Systems"** — a textbook that explores the frontier of biological computing using brain organoids. It bridges cutting-edge neuroscience, bioengineering, computational theory, and ethics to present a comprehensive treatment of Organoid Intelligence (OI) as an emerging paradigm in computing.
 
@@ -22,7 +22,7 @@ The repository brings together 24 chapters across 8 thematic parts, 5 appendices
 
 ---
 
-## 📚 Table of Contents
+## Table of Contents
 
 ### Textbook Structure
 
@@ -95,7 +95,7 @@ The repository brings together 24 chapters across 8 thematic parts, 5 appendices
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.9+
@@ -127,7 +127,7 @@ Open `visualizations/web/index.html` in your browser — no server needed.
 
 ---
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```
 Organoid-Intelligence/
@@ -143,7 +143,7 @@ Organoid-Intelligence/
 
 ---
 
-## 🔬 How to Use Each Section
+## How to Use Each Section
 
 | Section | Audience | Purpose |
 |---------|----------|---------|
@@ -157,13 +157,13 @@ Organoid-Intelligence/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on submitting issues, pull requests, and new content.
 
 ---
 
-## 📄 Citation
+## Citation
 
 If you use this repository or textbook in your research, please cite:
 
@@ -180,7 +180,7 @@ If you use this repository or textbook in your research, please cite:
 
 ---
 
-## ⚖️ License
+## License
 
 Copyright © 2026 DaScient, LLC. All rights reserved.
 
