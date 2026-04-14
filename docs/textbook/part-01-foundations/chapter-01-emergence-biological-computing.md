@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Twenty-Watt Computer
+## The Twenty-Watt Computer
 
 In the winter of 1943, while Allied codebreakers labored at Bletchley Park to crack the Enigma cipher with electromechanical machines consuming kilowatts of power, a quiet paper appeared in the *Bulletin of Mathematical Biophysics*. Its authors — Warren McCulloch, a neuropsychiatrist, and Walter Pitts, a self-taught teenage logician — proposed something audacious: that the basic operations of the nervous system could be described in the language of formal logic (McCulloch & Pitts, 1943). Their "logical calculus of ideas immanent in nervous activity" demonstrated that networks of idealized neurons could, in principle, compute any function that a Turing machine could compute.
 
