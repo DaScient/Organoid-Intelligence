@@ -6,7 +6,7 @@
     <title>Organoid Intelligence — Biological Computing In Living Systems</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="templatemo-nexaverse.css">
 <!--
 
@@ -33,6 +33,34 @@ https://templatemo.com/tm-603-nexaverse
     <!-- Grid Overlay -->
     <div class="grid-overlay"></div>
 
+    <!-- Sticky Navigation -->
+    <nav class="site-nav" id="siteNav">
+        <div class="nav-brand">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="navLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#6ee7b7"/>
+                        <stop offset="100%" style="stop-color:#a78bfa"/>
+                    </linearGradient>
+                </defs>
+                <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#navLogoGrad)" stroke-width="3"/>
+                <circle cx="50" cy="50" r="10" fill="url(#navLogoGrad)"/>
+            </svg>
+            <div>
+                <div class="nav-brand-name">DaScient</div>
+                <div class="nav-brand-sub">Organoid Intelligence</div>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="#introduction" class="nav-link active">Introduction</a>
+            <a href="#chapters" class="nav-link">Chapters</a>
+            <a href="#resources" class="nav-link">Resources</a>
+            <a href="#capstones" class="nav-link">Capstones</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
     <!-- Main Container -->
     <div class="container">
         <!-- Header -->
@@ -41,8 +69,8 @@ https://templatemo.com/tm-603-nexaverse
                 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#00f0ff"/>
-                            <stop offset="100%" style="stop-color:#ff00d4"/>
+                            <stop offset="0%" style="stop-color:#6ee7b7"/>
+                            <stop offset="100%" style="stop-color:#a78bfa"/>
                         </linearGradient>
                     </defs>
                     <polygon points="50,5 95,30 95,70 50,95 5,70 5,30" fill="none" stroke="url(#logoGradient)" stroke-width="2"/>
@@ -55,58 +83,11 @@ https://templatemo.com/tm-603-nexaverse
             <p class="tagline">Organoid Intelligence</p>
         </div>
 
-        <!-- Menu Grid -->
-        <div class="menu-grid" id="menuGrid">
-            <div class="menu-item initial-load" data-section="introduction">
-                <div class="menu-badge">IN</div>
-                <div class="menu-title">Introduction</div>
-            </div>
-            <div class="menu-item initial-load" data-section="chapters">
-                <div class="menu-badge">CH</div>
-                <div class="menu-title">Chapters</div>
-            </div>
-            <div class="menu-item initial-load" data-section="resources">
-                <div class="menu-badge">RS</div>
-                <div class="menu-title">Resources</div>
-            </div>
-            <div class="menu-item initial-load" data-section="capstones">
-                <div class="menu-badge">CP</div>
-                <div class="menu-title">Capstones</div>
-            </div>
-            <div class="menu-item initial-load" data-section="about">
-                <div class="menu-badge">AB</div>
-                <div class="menu-title">About</div>
-            </div>
-            <div class="menu-item initial-load" data-section="contact">
-                <div class="menu-badge">CT</div>
-                <div class="menu-title">Contact</div>
-            </div>
-        </div>
-
         <!-- Content Sections -->
         <div id="contentArea">
 
             <!-- ==================== INTRODUCTION ==================== -->
             <div class="content-section" id="introduction">
-                <div class="section-header-small">
-                    <div class="small-logo">
-                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="smallLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#00f0ff"/>
-                                    <stop offset="100%" style="stop-color:#ff00d4"/>
-                                </linearGradient>
-                            </defs>
-                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad)" stroke-width="3"/>
-                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad)"/>
-                        </svg>
-                    </div>
-                    <div class="small-brand">
-                        <h3>DaScient</h3>
-                        <p>Organoid Intelligence</p>
-                    </div>
-                </div>
-                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
 
                 <!-- Hero Banner -->
                 <div class="intro-hero">
@@ -202,25 +183,6 @@ https://templatemo.com/tm-603-nexaverse
 
             <!-- ==================== CHAPTERS (was Services) ==================== -->
             <div class="content-section" id="chapters">
-                <div class="section-header-small">
-                    <div class="small-logo">
-                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="smallLogoGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#00f0ff"/>
-                                    <stop offset="100%" style="stop-color:#ff00d4"/>
-                                </linearGradient>
-                            </defs>
-                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad2)" stroke-width="3"/>
-                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad2)"/>
-                        </svg>
-                    </div>
-                    <div class="small-brand">
-                        <h3>DaScient</h3>
-                        <p>Organoid Intelligence</p>
-                    </div>
-                </div>
-                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
 
                 <div class="section-header">
                     <h2 class="section-title">Textbook Chapters</h2>
@@ -485,25 +447,6 @@ https://templatemo.com/tm-603-nexaverse
 
             <!-- ==================== RESOURCES (was Gallery) ==================== -->
             <div class="content-section" id="resources">
-                <div class="section-header-small">
-                    <div class="small-logo">
-                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="smallLogoGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#00f0ff"/>
-                                    <stop offset="100%" style="stop-color:#ff00d4"/>
-                                </linearGradient>
-                            </defs>
-                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad3)" stroke-width="3"/>
-                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad3)"/>
-                        </svg>
-                    </div>
-                    <div class="small-brand">
-                        <h3>DaScient</h3>
-                        <p>Organoid Intelligence</p>
-                    </div>
-                </div>
-                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
 
                 <div class="section-header">
                     <h2 class="section-title">Companion Resources</h2>
@@ -577,25 +520,6 @@ https://templatemo.com/tm-603-nexaverse
 
             <!-- ==================== CAPSTONES (was Testimonials) ==================== -->
             <div class="content-section" id="capstones">
-                <div class="section-header-small">
-                    <div class="small-logo">
-                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="smallLogoGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#00f0ff"/>
-                                    <stop offset="100%" style="stop-color:#ff00d4"/>
-                                </linearGradient>
-                            </defs>
-                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad4)" stroke-width="3"/>
-                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad4)"/>
-                        </svg>
-                    </div>
-                    <div class="small-brand">
-                        <h3>DaScient</h3>
-                        <p>Organoid Intelligence</p>
-                    </div>
-                </div>
-                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
 
                 <div class="section-header">
                     <h2 class="section-title">Capstone Projects</h2>
@@ -606,7 +530,7 @@ https://templatemo.com/tm-603-nexaverse
                     <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/capstones/capstone-01-foundations.md" target="_blank" class="testimonial-card" style="text-decoration:none;color:inherit;">
                         <p class="testimonial-text">Build a complete Hodgkin-Huxley neuron model from scratch in Python, analyze its computational properties, and construct a small coupled-neuron network exhibiting emergent synchronization.</p>
                         <div class="testimonial-author">
-                            <div class="author-avatar" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#00f0ff22,#ff00d422);border-radius:50%;width:50px;height:50px;color:#00f0ff;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9.5 2 7.5 4 7.5 6.5c0 .5.1 1 .3 1.5C6.1 8.5 5 10 5 11.5c0 1.3.7 2.5 1.8 3.2-.1.4-.3.9-.3 1.3 0 2.2 1.8 4 4 4h1V12"/><path d="M12 2c2.5 0 4.5 2 4.5 4.5c0 .5-.1 1-.3 1.5c1.7.5 2.8 2 2.8 3.5c0 1.3-.7 2.5-1.8 3.2.1.4.3.9.3 1.3c0 2.2-1.8 4-4 4h-1.5V12"/></svg></div>
+                            <div class="author-avatar" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#6ee7b722,#a78bfa22);border-radius:50%;width:50px;height:50px;color:#6ee7b7;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9.5 2 7.5 4 7.5 6.5c0 .5.1 1 .3 1.5C6.1 8.5 5 10 5 11.5c0 1.3.7 2.5 1.8 3.2-.1.4-.3.9-.3 1.3 0 2.2 1.8 4 4 4h1V12"/><path d="M12 2c2.5 0 4.5 2 4.5 4.5c0 .5-.1 1-.3 1.5c1.7.5 2.8 2 2.8 3.5c0 1.3-.7 2.5-1.8 3.2.1.4.3.9.3 1.3c0 2.2-1.8 4-4 4h-1.5V12"/></svg></div>
                             <div class="author-info">
                                 <h5>Capstone 1 — Foundations</h5>
                                 <p>Hodgkin-Huxley Neuron Simulation · Chapters 1–3</p>
@@ -616,7 +540,7 @@ https://templatemo.com/tm-603-nexaverse
                     <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/capstones/capstone-02-biological-substrate.md" target="_blank" class="testimonial-card" style="text-decoration:none;color:inherit;">
                         <p class="testimonial-text">Design a comprehensive end-to-end protocol for generating, culturing, and maturing cortical brain organoids from iPSCs — including a vascularization strategy addressing the diffusion barrier.</p>
                         <div class="testimonial-author">
-                            <div class="author-avatar" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#00f0ff22,#ff00d422);border-radius:50%;width:50px;height:50px;color:#00f0ff;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M8 4c0 2.5 1.5 4.5 4 4.5s4-2 4-4.5"/><path d="M8 20c0-2.5 1.5-4.5 4-4.5s4 2 4 4.5"/><path d="M8 12c0-2 1.5-3.5 4-3.5s4 1.5 4 3.5c0 2-1.5 3.5-4 3.5s-4-1.5-4-3.5z"/></svg></div>
+                            <div class="author-avatar" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#6ee7b722,#a78bfa22);border-radius:50%;width:50px;height:50px;color:#6ee7b7;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M8 4c0 2.5 1.5 4.5 4 4.5s4-2 4-4.5"/><path d="M8 20c0-2.5 1.5-4.5 4-4.5s4 2 4 4.5"/><path d="M8 12c0-2 1.5-3.5 4-3.5s4 1.5 4 3.5c0 2-1.5 3.5-4 3.5s-4-1.5-4-3.5z"/></svg></div>
                             <div class="author-info">
                                 <h5>Capstone 2 — Biological Substrate</h5>
                                 <p>Organoid Fabrication &amp; Maturation Plan · Chapters 4–6</p>
@@ -626,7 +550,7 @@ https://templatemo.com/tm-603-nexaverse
                     <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/capstones/capstone-03-biocomputer-interface.md" target="_blank" class="testimonial-card" style="text-decoration:none;color:inherit;">
                         <p class="testimonial-text">Design and implement a complete data-acquisition and signal-processing pipeline for multi-electrode array (MEA) recordings from brain organoids — from spike detection to network analysis.</p>
                         <div class="testimonial-author">
-                            <div class="author-avatar" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#00f0ff22,#ff00d422);border-radius:50%;width:50px;height:50px;color:#00f0ff;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13.5h6L9 22l9.5-12h-6.5L13 2z"/></svg></div>
+                            <div class="author-avatar" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#6ee7b722,#a78bfa22);border-radius:50%;width:50px;height:50px;color:#6ee7b7;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13.5h6L9 22l9.5-12h-6.5L13 2z"/></svg></div>
                             <div class="author-info">
                                 <h5>Capstone 3 — Biocomputer Interface</h5>
                                 <p>MEA Recording &amp; Signal Processing Pipeline · Chapters 7–9</p>
@@ -636,7 +560,7 @@ https://templatemo.com/tm-603-nexaverse
                     <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/capstones/capstone-04-computational-theory.md" target="_blank" class="testimonial-card" style="text-decoration:none;color:inherit;">
                         <p class="testimonial-text">Implement a complete reservoir computing system in Python, benchmark it on canonical tasks, and compare engineered vs. biologically constrained reservoir architectures.</p>
                         <div class="testimonial-author">
-                            <div class="author-avatar" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#00f0ff22,#ff00d422);border-radius:50%;width:50px;height:50px;color:#00f0ff;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg></div>
+                            <div class="author-avatar" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#6ee7b722,#a78bfa22);border-radius:50%;width:50px;height:50px;color:#6ee7b7;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg></div>
                             <div class="author-info">
                                 <h5>Capstone 4 — Computational Theory</h5>
                                 <p>Reservoir Computing System · Chapters 10–12</p>
@@ -646,7 +570,7 @@ https://templatemo.com/tm-603-nexaverse
                     <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/capstones/capstone-05-final-project.md" target="_blank" class="testimonial-card" style="text-decoration:none;color:inherit;">
                         <p class="testimonial-text">Design a complete, integrated OI system — from biological substrate to computational output — synthesizing knowledge from all eight parts into a coherent engineering proposal with ethical analysis.</p>
                         <div class="testimonial-author">
-                            <div class="author-avatar" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#00f0ff22,#ff00d422);border-radius:50%;width:50px;height:50px;color:#00f0ff;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 10v6"/></svg></div>
+                            <div class="author-avatar" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#6ee7b722,#a78bfa22);border-radius:50%;width:50px;height:50px;color:#6ee7b7;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 10v6"/></svg></div>
                             <div class="author-info">
                                 <h5>Capstone 5 — Final Project</h5>
                                 <p>Integrated OI System Design · Chapters 1–24</p>
@@ -658,25 +582,6 @@ https://templatemo.com/tm-603-nexaverse
 
             <!-- ==================== ABOUT ==================== -->
             <div class="content-section" id="about">
-                <div class="section-header-small">
-                    <div class="small-logo">
-                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="smallLogoGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#00f0ff"/>
-                                    <stop offset="100%" style="stop-color:#ff00d4"/>
-                                </linearGradient>
-                            </defs>
-                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad5)" stroke-width="3"/>
-                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad5)"/>
-                        </svg>
-                    </div>
-                    <div class="small-brand">
-                        <h3>DaScient</h3>
-                        <p>Organoid Intelligence</p>
-                    </div>
-                </div>
-                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
 
                 <div class="section-header">
                     <h2 class="section-title">About the Textbook</h2>
@@ -709,25 +614,6 @@ https://templatemo.com/tm-603-nexaverse
 
             <!-- ==================== CONTACT ==================== -->
             <div class="content-section" id="contact">
-                <div class="section-header-small">
-                    <div class="small-logo">
-                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="smallLogoGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#00f0ff"/>
-                                    <stop offset="100%" style="stop-color:#ff00d4"/>
-                                </linearGradient>
-                            </defs>
-                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad6)" stroke-width="3"/>
-                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad6)"/>
-                        </svg>
-                    </div>
-                    <div class="small-brand">
-                        <h3>Organoid Intelligence</h3>
-                        <p>Biological Computing In Living Systems</p>
-                    </div>
-                </div>
-                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
 
                 <div class="section-header">
                     <h2 class="section-title">Get in Touch</h2>
@@ -769,7 +655,7 @@ https://templatemo.com/tm-603-nexaverse
                             <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg></div>
                             <div class="contact-details">
                                 <h4>GitHub</h4>
-                                <p><a href="https://github.com/DaScient/Organoid-Intelligence" target="_blank" style="color:#00f0ff;">DaScient/Organoid-Intelligence</a></p>
+                                <p><a href="https://github.com/DaScient/Organoid-Intelligence" target="_blank" style="color:#6ee7b7;">DaScient/Organoid-Intelligence</a></p>
                             </div>
                         </div>
                     </div>

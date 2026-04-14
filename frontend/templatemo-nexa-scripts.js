@@ -3,9 +3,7 @@
    ==========================================================================
    Table of Contents:
    1.  Typing Effect & Loading Screen
-   2.  Menu Item Click Handler & Core Globals
-   3.  Section Transitions (showSection / backToMenu)
-   4.  Enhanced Counter Animation (animateStats)
+   4.  Enhanced Counter Animation (animateStats) & Stats Observer
    5.  Tab Switching (switchTab)
    6.  Gallery Filter (filterGallery)
    7.  Interactive Neural Network Canvas Background
@@ -15,9 +13,8 @@
    11. Progress Bar
    12. Scroll-to-Top Button
    13. Magnetic Button Effect
-   14. Section Transition Flash Overlay
    15. Active Tab Underline Animation (CSS injection)
-   16. Keyboard Navigation
+   17. Smooth-Scroll Nav & Scroll Spy
    ========================================================================== */
 
 (function () {
@@ -49,204 +46,7 @@ window.addEventListener('load', function () {
 });
 
 /* --------------------------------------------------------------------------
-   2. MENU ITEM CLICK HANDLER & CORE GLOBALS
-   -------------------------------------------------------------------------- */
-var menuItems = document.querySelectorAll('.menu-item');
-var contentSections = document.querySelectorAll('.content-section');
-var menuGrid = document.getElementById('menuGrid');
-var mainHeader = document.getElementById('mainHeader');
-var mainFooter = document.getElementById('mainFooter');
-var isTransitioning = false;
-var sectionActive = false; // tracks whether a content section is open
-
-menuItems.forEach(function (item) {
-   item.addEventListener('click', function () {
-      if (isTransitioning) return;
-      var sectionId = item.dataset.section;
-      showSection(sectionId);
-   });
-});
-
-/* --------------------------------------------------------------------------
-   3. SECTION TRANSITIONS — showSection / backToMenu
-   -------------------------------------------------------------------------- */
-function showSection(sectionId) {
-   isTransitioning = true;
-
-   // Flash overlay effect
-   triggerTransitionFlash();
-
-   // First, ensure all menu items are in visible state before transitioning
-   menuItems.forEach(function (item) {
-      item.classList.remove('initial-load');
-      item.style.opacity = '1';
-      item.style.transform = 'translateY(0) scale(1)';
-      item.style.animation = 'none';
-   });
-
-   void menuGrid.offsetWidth;
-
-   // Staggered fade out
-   menuItems.forEach(function (item, index) {
-      setTimeout(function () {
-         item.style.transition = 'all 0.4s ease-out';
-         item.style.opacity = '0';
-         item.style.transform = 'translateY(40px) scale(0.9)';
-      }, index * 50);
-   });
-
-   // Hide header and footer
-   mainHeader.style.animation = 'none';
-   mainHeader.style.opacity = '1';
-   mainFooter.style.animation = 'none';
-   mainFooter.style.opacity = '1';
-
-   void mainHeader.offsetWidth;
-
-   mainHeader.style.transition = 'opacity 0.4s ease';
-   mainHeader.style.opacity = '0';
-   mainFooter.style.transition = 'opacity 0.4s ease';
-   mainFooter.style.opacity = '0';
-
-   // Show content section after menu animation
-   setTimeout(function () {
-      menuGrid.style.display = 'none';
-      mainHeader.style.display = 'none';
-      mainFooter.style.display = 'none';
-
-      menuItems.forEach(function (item) {
-         item.style.transition = '';
-         item.style.opacity = '';
-         item.style.transform = '';
-         item.classList.remove('exit-up', 'visible');
-      });
-
-      var section = document.getElementById(sectionId);
-      section.classList.add('active');
-      sectionActive = true;
-
-      // Show progress bar
-      if (progressBar) progressBar.style.opacity = '1';
-
-      // Animate stats if introduction section
-      if (sectionId === 'introduction') {
-         setTimeout(animateStats, 500);
-      }
-
-      // Re-observe reveal elements inside this section
-      observeReveals();
-
-      isTransitioning = false;
-   }, 550);
-}
-window.showSection = showSection;
-
-function backToMenu() {
-   if (isTransitioning) return;
-   isTransitioning = true;
-
-   var activeSection = document.querySelector('.content-section.active');
-   if (activeSection) {
-      var sectionHeaderSmall = activeSection.querySelector('.section-header-small');
-      var backBtn = activeSection.querySelector('.back-btn');
-
-      activeSection.style.animation = 'none';
-      activeSection.style.opacity = '1';
-
-      void activeSection.offsetWidth;
-
-      activeSection.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-      activeSection.style.opacity = '0';
-      activeSection.style.transform = 'translateY(-20px)';
-
-      if (sectionHeaderSmall) {
-         sectionHeaderSmall.style.transition = 'opacity 0.5s ease';
-         sectionHeaderSmall.style.opacity = '0';
-      }
-      if (backBtn) {
-         backBtn.style.transition = 'opacity 0.5s ease';
-         backBtn.style.opacity = '0';
-      }
-
-      setTimeout(function () {
-         activeSection.classList.remove('active');
-         activeSection.style.animation = '';
-         activeSection.style.opacity = '';
-         activeSection.style.transform = '';
-         activeSection.style.transition = '';
-
-         if (sectionHeaderSmall) {
-            sectionHeaderSmall.style.opacity = '';
-            sectionHeaderSmall.style.transition = '';
-         }
-         if (backBtn) {
-            backBtn.style.opacity = '';
-            backBtn.style.transition = '';
-         }
-
-         sectionActive = false;
-
-         // Hide progress bar
-         if (progressBar) progressBar.style.opacity = '0';
-         // Hide scroll-to-top
-         if (scrollTopBtn) scrollTopBtn.style.opacity = '0';
-         if (scrollTopBtn) scrollTopBtn.style.pointerEvents = 'none';
-
-         menuGrid.style.display = 'grid';
-         mainHeader.style.display = 'block';
-         mainFooter.style.display = 'block';
-
-         mainHeader.style.animation = 'none';
-         mainFooter.style.animation = 'none';
-
-         mainHeader.style.opacity = '0';
-         mainHeader.style.transform = 'translateY(20px)';
-         mainFooter.style.opacity = '0';
-
-         menuItems.forEach(function (item) {
-            item.classList.remove('exit-up', 'initial-load', 'return', 'visible');
-            item.style.opacity = '0';
-            item.style.transform = 'translateY(30px) scale(0.9)';
-         });
-
-         setTimeout(function () {
-            mainHeader.style.transition = 'all 0.5s ease';
-            mainHeader.style.opacity = '1';
-            mainHeader.style.transform = 'translateY(0)';
-
-            mainFooter.style.transition = 'all 0.5s ease';
-            mainFooter.style.opacity = '1';
-
-            menuItems.forEach(function (item, index) {
-               setTimeout(function () {
-                  item.style.transition = 'all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
-                  item.style.opacity = '1';
-                  item.style.transform = 'translateY(0) scale(1)';
-               }, index * 80);
-            });
-
-            setTimeout(function () {
-               mainHeader.style.transition = '';
-               mainHeader.style.transform = '';
-               mainFooter.style.transition = '';
-
-               menuItems.forEach(function (item) {
-                  item.style.transition = '';
-                  item.style.opacity = '';
-                  item.style.transform = '';
-                  item.classList.add('visible');
-               });
-
-               isTransitioning = false;
-            }, 600);
-         }, 150);
-      }, 550);
-   }
-}
-window.backToMenu = backToMenu;
-
-/* --------------------------------------------------------------------------
-   4. ENHANCED COUNTER ANIMATION (animateStats)
+   4. ENHANCED COUNTER ANIMATION (animateStats) & STATS OBSERVER
    -------------------------------------------------------------------------- */
 function easeOutExpo(t) {
    return t === 1 ? 1 : 1 - Math.pow(2, -10 * t);
@@ -290,6 +90,22 @@ function animateStats() {
 }
 window.animateStats = animateStats;
 
+function initStatsObserver() {
+   var metricsEl = document.querySelector('.intro-metrics');
+   if (!metricsEl) return;
+   var observed = false;
+   var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+         if (entry.isIntersecting && !observed) {
+            observed = true;
+            animateStats();
+            obs.unobserve(metricsEl);
+         }
+      });
+   }, { threshold: 0.3 });
+   obs.observe(metricsEl);
+}
+
 /* --------------------------------------------------------------------------
    5. TAB SWITCHING
    -------------------------------------------------------------------------- */
@@ -332,7 +148,7 @@ var canvas, ctx, particles, animFrameId;
 var mouse = { x: -9999, y: -9999 };
 var PARTICLE_COUNT = 80;
 var CONNECT_DIST = 150;
-var COLORS = ['#00f0ff', '#ff00d4', '#9d4edd'];
+var COLORS = ['#6ee7b7', '#a78bfa', '#fbbf24'];
 
 function initCanvas() {
    // Hide CSS ambient-bg orbs
@@ -576,7 +392,7 @@ function initCardTilt() {
 
          // Inner glow follows cursor
          glow.style.opacity = '1';
-         glow.style.background = 'radial-gradient(circle at ' + x + 'px ' + y + 'px, rgba(0,240,255,0.12) 0%, transparent 60%)';
+         glow.style.background = 'radial-gradient(circle at ' + x + 'px ' + y + 'px, rgba(110,231,183,0.12) 0%, transparent 60%)';
       });
 
       card.addEventListener('mouseleave', function () {
@@ -597,26 +413,22 @@ function initProgressBar() {
    progressBar.id = 'scrollProgressBar';
    progressBar.style.cssText =
       'position:fixed;top:0;left:0;height:3px;z-index:10001;' +
-      'background:linear-gradient(90deg,#00f0ff,#ff00d4);' +
-      'width:0%;opacity:0;transition:opacity 0.3s ease;pointer-events:none;';
+      'background:linear-gradient(90deg,#6ee7b7,#a78bfa);' +
+      'width:0%;opacity:1;transition:opacity 0.3s ease;pointer-events:none;';
    document.body.appendChild(progressBar);
 
    window.addEventListener('scroll', updateProgressBar);
 }
 
 function updateProgressBar() {
-   if (!progressBar || !sectionActive) return;
-   var activeSection = document.querySelector('.content-section.active');
-   if (!activeSection) return;
-
+   if (!progressBar) return;
    var scrollTop = window.scrollY || document.documentElement.scrollTop;
-   var sectionTop = activeSection.offsetTop;
-   var sectionHeight = activeSection.scrollHeight - window.innerHeight;
-   if (sectionHeight <= 0) {
+   var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+   if (docHeight <= 0) {
       progressBar.style.width = '100%';
       return;
    }
-   var progress = Math.min(Math.max((scrollTop - sectionTop) / sectionHeight, 0), 1);
+   var progress = Math.min(Math.max(scrollTop / docHeight, 0), 1);
    progressBar.style.width = (progress * 100) + '%';
 }
 
@@ -639,7 +451,7 @@ function initScrollTopBtn() {
       'transition:opacity 0.3s ease,transform 0.3s ease,background 0.3s ease;';
 
    scrollTopBtn.addEventListener('mouseenter', function () {
-      scrollTopBtn.style.background = 'rgba(0,240,255,0.15)';
+      scrollTopBtn.style.background = 'rgba(110,231,183,0.15)';
       scrollTopBtn.style.transform = 'scale(1.1)';
    });
    scrollTopBtn.addEventListener('mouseleave', function () {
@@ -653,7 +465,6 @@ function initScrollTopBtn() {
    document.body.appendChild(scrollTopBtn);
 
    window.addEventListener('scroll', function () {
-      if (!sectionActive) return;
       var scrollTop = window.scrollY || document.documentElement.scrollTop;
       if (scrollTop > 300) {
          scrollTopBtn.style.opacity = '1';
@@ -694,26 +505,6 @@ function initMagneticButtons() {
 }
 
 /* --------------------------------------------------------------------------
-   14. SECTION TRANSITION FLASH OVERLAY
-   -------------------------------------------------------------------------- */
-function triggerTransitionFlash() {
-   var flash = document.createElement('div');
-   flash.style.cssText =
-      'position:fixed;top:0;left:0;width:100%;height:100%;z-index:9999;' +
-      'background:linear-gradient(135deg,rgba(255,255,255,0.08),transparent);' +
-      'pointer-events:none;opacity:1;transition:opacity 0.6s ease;';
-   document.body.appendChild(flash);
-
-   requestAnimationFrame(function () {
-      flash.style.opacity = '0';
-   });
-
-   setTimeout(function () {
-      if (flash.parentNode) flash.parentNode.removeChild(flash);
-   }, 700);
-}
-
-/* --------------------------------------------------------------------------
    15. ACTIVE TAB UNDERLINE ANIMATION (CSS injection)
    -------------------------------------------------------------------------- */
 function injectTabUnderlineCSS() {
@@ -721,41 +512,50 @@ function injectTabUnderlineCSS() {
    style.textContent =
       '.tab-btn{position:relative;overflow:visible;}' +
       '.tab-btn::after{content:"";position:absolute;bottom:-2px;left:0;width:0;height:2px;' +
-      'background:linear-gradient(90deg,#00f0ff,#ff00d4);transition:width 0.35s ease;border-radius:1px;}' +
+      'background:linear-gradient(90deg,#6ee7b7,#a78bfa);transition:width 0.35s ease;border-radius:1px;}' +
       '.tab-btn.active::after{width:100%;}';
    document.head.appendChild(style);
 }
 
 /* --------------------------------------------------------------------------
-   16. KEYBOARD NAVIGATION
+   17. SMOOTH-SCROLL NAV & SCROLL SPY
    -------------------------------------------------------------------------- */
-function initKeyboardNav() {
-   var sectionOrder = ['introduction', 'chapters', 'resources', 'capstones', 'about', 'contact'];
+function initSmoothScrollNav() {
+   var navLinks = document.querySelectorAll('.nav-link');
+   var sections = document.querySelectorAll('.content-section');
+   var header = document.getElementById('mainHeader');
 
-   document.addEventListener('keydown', function (e) {
-      if (isTransitioning) return;
-
-      // Escape to go back to menu
-      if (e.key === 'Escape') {
-         var active = document.querySelector('.content-section.active');
-         if (active) {
-            e.preventDefault();
-            backToMenu();
-         }
-         return;
-      }
-
-      // Keys 1-6 to select menu items (only when on menu screen)
-      // Skip if user is typing in a form field
-      var tag = document.activeElement ? document.activeElement.tagName : '';
-      if (tag === 'INPUT' || tag === 'TEXTAREA' || (document.activeElement && document.activeElement.isContentEditable)) return;
-
-      var num = parseInt(e.key);
-      if (num >= 1 && num <= 6 && !document.querySelector('.content-section.active')) {
+   // Click handler for nav links
+   navLinks.forEach(function(link) {
+      link.addEventListener('click', function(e) {
          e.preventDefault();
-         var sectionId = sectionOrder[num - 1];
-         if (sectionId) showSection(sectionId);
-      }
+         var targetId = this.getAttribute('href').substring(1);
+         var target = document.getElementById(targetId);
+         if (target) {
+            var navHeight = document.querySelector('.site-nav') ? document.querySelector('.site-nav').offsetHeight : 0;
+            var targetTop = target.getBoundingClientRect().top + window.scrollY - navHeight - 20;
+            window.scrollTo({ top: targetTop, behavior: 'smooth' });
+         }
+      });
+   });
+
+   // Scroll spy to highlight active nav link
+   var scrollSpyObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+         if (entry.isIntersecting) {
+            var id = entry.target.id;
+            navLinks.forEach(function(link) {
+               link.classList.remove('active');
+               if (link.getAttribute('href') === '#' + id) {
+                  link.classList.add('active');
+               }
+            });
+         }
+      });
+   }, { rootMargin: '-20% 0px -70% 0px', threshold: 0 });
+
+   sections.forEach(function(section) {
+      scrollSpyObserver.observe(section);
    });
 }
 
@@ -771,7 +571,8 @@ function initAll() {
    initCardTilt();
    initHeroParallax();
    initMagneticButtons();
-   initKeyboardNav();
+   initSmoothScrollNav();
+   initStatsObserver();
    observeReveals();
 }
 
