@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Asilomar Moment
+## The Asilomar Moment
 
 In February 1975, 140 biologists, physicians, and lawyers gathered at the Asilomar Conference Center on the Monterey Peninsula of California to confront a question that no scientific community had ever faced so directly: Should scientists voluntarily restrict their own research? The occasion was the advent of recombinant DNA technology — the ability to cut, splice, and recombine genetic material from different organisms — which had opened extraordinary possibilities for understanding gene function but also raised the specter of engineered pathogens, ecological disruption, and biological hazards that no one fully understood.
 
