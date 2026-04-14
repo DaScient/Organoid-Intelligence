@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Assembloid Internet
+## Assembloid Internet
 
 In the autumn of 2017, Sergiu Paşca's laboratory at Stanford University reported something remarkable: two brain organoids, placed in close proximity in a culture dish, had reached out to each other. Axons — the long, slender projections that neurons extend to communicate over distances — had grown from one organoid into the other, forming functional synaptic connections across the gap. When one organoid was stimulated, the other responded, milliseconds later, through these self-assembled axonal bridges (Birey et al., 2017).
 
