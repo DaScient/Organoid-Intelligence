@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Immortal Life of Henrietta Lacks
+## The Immortal Life of Henrietta Lacks
 
 On January 29, 1951, a young African American woman named Henrietta Lacks walked into the colored ward of Johns Hopkins Hospital in Baltimore, Maryland, complaining of a "knot" in her womb. She was thirty years old, the mother of five children, and had no idea that the tumor growing inside her cervix would transform the course of modern biomedical science — or that it would ignite a decades-long debate about who owns human tissue, who profits from biological discoveries, and what rights donors have over cells taken from their bodies.
 
