@@ -1,4 +1,4 @@
-# 📖 Book Overview
+# Book Overview
 
 ## Organoid Intelligence: Biological Computing In Living Systems
 
