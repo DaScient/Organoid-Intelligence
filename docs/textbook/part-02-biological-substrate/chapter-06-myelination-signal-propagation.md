@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The White Matter's Secret
+## The White Matter's Secret
 
 In 1878, a young medical student in Paris named Louis-Antoine **Ranvier** peered through his microscope at a teased nerve fiber preparation and noticed something peculiar. At regular intervals along the length of the fiber, the glistening white sheath that surrounded the axon appeared to be *interrupted* — pinched down to almost nothing, leaving a tiny gap of exposed membrane roughly one to two micrometers wide. These constrictions, which Ranvier described with meticulous care in his *Leçons sur l'histologie du système nerveux* (1878), would come to bear his name: the **nodes of Ranvier**. But neither Ranvier nor anyone else at the time understood what these structures actually *did*. They were catalogued, illustrated, debated — and then largely forgotten for half a century.
 
