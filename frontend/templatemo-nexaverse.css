@@ -5,6 +5,15 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+::selection {
+	background: rgba(0, 240, 255, 0.25);
+	color: #ffffff;
+}
+
 :root {
 	--primary: #00f0ff;
 	--secondary: #ff00d4;
@@ -229,10 +238,17 @@ body {
 	letter-spacing: 6px;
 	margin-bottom: 12px;
 	background: linear-gradient(135deg, var(--primary) 0%, #ffffff 50%, var(--secondary) 100%);
+	background-size: 200% 200%;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 	text-transform: uppercase;
+	animation: gradientShift 8s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+	0%, 100% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
 }
 
 .tagline {
@@ -532,9 +548,11 @@ body {
 	font-weight: 600;
 	margin-bottom: 15px;
 	background: linear-gradient(135deg, var(--primary) 0%, #ffffff 50%, var(--secondary) 100%);
+	background-size: 200% 200%;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
+	animation: gradientShift 8s ease-in-out infinite;
 }
 
 .section-subtitle {
@@ -1900,4 +1918,373 @@ a.gallery-item {
     .testimonials-grid {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
+}
+
+/* ==========================================================================
+   SVG ICON STYLING
+   ========================================================================== */
+
+/* Floating hero card SVG icons */
+.card-icon-svg {
+	color: var(--primary);
+	filter: drop-shadow(0 0 6px var(--glow-cyan));
+	transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.intro-floating-card:hover .card-icon-svg {
+	color: #ffffff;
+	filter: drop-shadow(0 0 12px var(--glow-cyan));
+}
+
+/* Chapter row SVG icons */
+.service-row-icon svg {
+	color: var(--primary);
+	opacity: 0.7;
+	transition: all 0.4s ease;
+	filter: drop-shadow(0 0 4px rgba(0, 240, 255, 0.15));
+}
+
+.service-row:hover .service-row-icon svg {
+	opacity: 1;
+	color: #ffffff;
+	filter: drop-shadow(0 0 10px var(--glow-cyan));
+	transform: scale(1.08);
+}
+
+/* Resource gallery SVG icons */
+.resource-card-inner svg {
+	color: rgba(255, 255, 255, 0.45);
+	transition: all 0.4s ease;
+}
+
+.gallery-item:hover .resource-card-inner svg {
+	color: var(--primary);
+	filter: drop-shadow(0 0 12px var(--glow-cyan));
+	transform: scale(1.1);
+}
+
+/* Contact icon SVGs */
+.contact-icon svg {
+	color: var(--primary);
+	transition: all 0.3s ease;
+}
+
+.contact-item:hover .contact-icon svg {
+	filter: drop-shadow(0 0 8px var(--glow-cyan));
+	transform: scale(1.1);
+}
+
+/* Capstone author avatar SVGs */
+.author-avatar svg {
+	transition: all 0.3s ease;
+}
+
+a.testimonial-card:hover .author-avatar svg {
+	filter: drop-shadow(0 0 8px var(--glow-cyan));
+}
+
+/* ==========================================================================
+   ENHANCED VISUAL EFFECTS
+   ========================================================================== */
+
+/* Subtle border shimmer on glass cards */
+@keyframes borderShimmer {
+	0%, 100% {
+		border-color: var(--glass-border);
+	}
+	50% {
+		border-color: rgba(0, 240, 255, 0.12);
+	}
+}
+
+.value-card,
+.testimonial-card,
+.contact-item {
+	animation: borderShimmer 8s ease-in-out infinite;
+	animation-delay: calc(var(--card-index, 0) * 1.5s);
+}
+
+/* Enhanced section title with subtle text shadow */
+.section-title {
+	text-shadow: 0 0 40px rgba(0, 240, 255, 0.08);
+}
+
+/* Refined intro badge pulse */
+.intro-badge {
+	animation: badgePulse 3s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+	0%, 100% {
+		box-shadow: 0 0 0 0 rgba(0, 240, 255, 0.15);
+	}
+	50% {
+		box-shadow: 0 0 0 8px rgba(0, 240, 255, 0);
+	}
+}
+
+/* Enhanced CTA button hover glow */
+.intro-cta-primary {
+	position: relative;
+	overflow: hidden;
+}
+
+.intro-cta-primary::after {
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	background: conic-gradient(
+		transparent,
+		rgba(0, 240, 255, 0.08),
+		transparent 30%
+	);
+	animation: ctaSpin 6s linear infinite;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.intro-cta-primary:hover::after {
+	opacity: 1;
+}
+
+@keyframes ctaSpin {
+	to { transform: rotate(360deg); }
+}
+
+/* Service row left accent on hover */
+.service-row:hover {
+	border-left-color: var(--primary);
+}
+
+/* Enhanced footer link hover */
+.footer a {
+	position: relative;
+	padding-bottom: 2px;
+}
+
+.footer a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background: linear-gradient(90deg, var(--primary), var(--secondary));
+	transition: width 0.3s ease;
+}
+
+.footer a:hover::after {
+	width: 100%;
+}
+
+/* Smooth focus states for accessibility */
+.menu-item:focus-visible,
+.tab-btn:focus-visible,
+.filter-btn:focus-visible,
+.intro-cta-primary:focus-visible,
+.intro-cta-secondary:focus-visible,
+.submit-btn:focus-visible,
+.back-btn:focus-visible {
+	outline: 2px solid var(--primary);
+	outline-offset: 3px;
+}
+
+/* Enhanced loading screen backdrop */
+.loading-screen {
+	background: radial-gradient(ellipse at center, var(--dark-2) 0%, var(--dark-1) 70%);
+}
+
+.loading-text {
+	min-height: 1.5em;
+}
+
+/* Subtle inner glow on metric strip */
+.intro-metrics {
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* Value card number subtle glow on hover */
+.value-card:hover .value-number {
+	color: rgba(0, 240, 255, 0.3);
+	text-shadow: 0 0 30px rgba(0, 240, 255, 0.15);
+	transition: all 0.4s ease;
+}
+
+/* Enhanced gallery overlay gradient */
+.gallery-overlay {
+	background: linear-gradient(transparent 20%, rgba(10, 10, 18, 0.95) 100%);
+}
+
+.gallery-item:hover .gallery-overlay {
+	opacity: 1;
+}
+
+/* Gallery overlay text reveal animation */
+.gallery-overlay h4 {
+	transform: translateY(10px);
+	transition: transform 0.3s ease, opacity 0.3s ease;
+	opacity: 0;
+}
+
+.gallery-overlay p {
+	transform: translateY(10px);
+	transition: transform 0.3s ease 0.06s, opacity 0.3s ease 0.06s;
+	opacity: 0;
+}
+
+.gallery-item:hover .gallery-overlay h4,
+.gallery-item:hover .gallery-overlay p {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+/* Refined testimonial card quote mark */
+.testimonial-card::before {
+	transition: opacity 0.3s ease;
+}
+
+a.testimonial-card:hover::before {
+	opacity: 0.4;
+	color: rgba(0, 240, 255, 0.15);
+}
+
+/* Enhanced form field animations */
+.form-group input,
+.form-group textarea {
+	position: relative;
+}
+
+.form-group {
+	position: relative;
+}
+
+.form-group::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 2px;
+	background: linear-gradient(90deg, var(--primary), var(--secondary));
+	transition: width 0.3s ease, left 0.3s ease;
+	border-radius: 1px;
+}
+
+.form-group:focus-within::after {
+	width: 100%;
+	left: 0;
+}
+
+/* Submit button active state */
+.submit-btn:active {
+	transform: translateY(0) scale(0.98);
+}
+
+/* Tab button active indicator enhancement */
+.tab-btn {
+	transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tab-btn.active {
+	transform: translateY(-2px);
+}
+
+/* Chapter service rows stagger delay via CSS */
+.service-row:nth-child(1) { --card-index: 0; }
+.service-row:nth-child(2) { --card-index: 1; }
+.service-row:nth-child(3) { --card-index: 2; }
+
+/* Enhanced about parts list hover */
+.about-part-item {
+	transition: background 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+	position: relative;
+}
+
+.about-part-item:hover {
+	background: rgba(0, 240, 255, 0.06);
+	transform: translateX(4px);
+}
+
+.about-part-item:hover .about-part-num {
+	box-shadow: 0 0 12px rgba(0, 240, 255, 0.2);
+	transition: box-shadow 0.3s ease;
+}
+
+/* Scrollbar styling for content sections */
+.content-section {
+	scrollbar-width: thin;
+	scrollbar-color: rgba(0, 240, 255, 0.2) transparent;
+}
+
+.content-section::-webkit-scrollbar {
+	width: 6px;
+}
+
+.content-section::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.content-section::-webkit-scrollbar-thumb {
+	background: linear-gradient(180deg, var(--primary), var(--accent));
+	border-radius: 3px;
+}
+
+/* Global scrollbar */
+body::-webkit-scrollbar {
+	width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+	background: var(--dark-1);
+}
+
+body::-webkit-scrollbar-thumb {
+	background: linear-gradient(180deg, rgba(0, 240, 255, 0.3), rgba(157, 78, 221, 0.3));
+	border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(180deg, rgba(0, 240, 255, 0.5), rgba(157, 78, 221, 0.5));
+}
+
+/* When neural canvas is present, hide CSS orbs */
+#neuralCanvas ~ .container .ambient-bg,
+body:has(#neuralCanvas) .ambient-bg {
+	display: none;
+}
+
+/* Ensure tilt target cards are positioned for the glow overlay */
+.menu-item,
+.value-card,
+.testimonial-card {
+	position: relative;
+}
+
+/* ==========================================================================
+   REDUCED MOTION ACCESSIBILITY
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0s !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0s !important;
+	}
+
+	html {
+		scroll-behavior: auto;
+	}
+
+	.tech-track {
+		animation: none;
+	}
+
+	.orb {
+		animation: none;
+	}
 }
