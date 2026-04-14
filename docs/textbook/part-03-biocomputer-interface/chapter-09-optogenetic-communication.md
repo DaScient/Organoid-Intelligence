@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: Light in the Darkness
+## Light in Darkness
 
 In the brackish ponds outside Regensburg, Germany, a single-celled green alga called *Chlamydomonas reinhardtii* has been performing a trick for roughly 500 million years. When blue light strikes its eyespot—a primitive photoreceptor no larger than a wavelength of visible light—a tiny protein embedded in the cell membrane opens a channel, allowing cations to rush inward. The flagellum pivots, and the alga steers toward the sun. For most of biological history, this molecular machinery was nothing more than an evolutionary footnote, a curiosity of protist physiology catalogued in dusty monographs.
 
