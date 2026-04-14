@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Four Factors That Changed Everything
+## The Four Factors That Changed Everything
 
 In the summer of 2006, a quiet, methodical surgeon-turned-scientist named Shinya **Yamanaka** was about to upend one of the most entrenched dogmas in biology. Working at Kyoto University with a small team that included postdoctoral researcher Kazutoshi **Takahashi**, Yamanaka had spent years chasing a question that most of his colleagues considered quixotic: could an adult, fully differentiated cell be forced to forget what it was and become something else entirely?
 
