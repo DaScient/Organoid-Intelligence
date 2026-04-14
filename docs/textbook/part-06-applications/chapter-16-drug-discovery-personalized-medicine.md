@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Tumor That Told Its Own Story
+## The Tumor That Told Its Own Story
 
 In the spring of 2018, a 62-year-old woman diagnosed with metastatic colorectal cancer arrived at the Netherlands Cancer Institute facing an agonizing reality: she had already failed two lines of standard chemotherapy, and her oncologist was running out of options. Her tumor had been profiled genomically — a battery of next-generation sequencing panels had catalogued its mutations — but the molecular data alone could not definitively predict which of the remaining therapeutic options, if any, would slow her disease. What happened next represented a paradigm shift in how we think about drug selection. A small biopsy of her tumor was shipped to the laboratory of Hans **Clevers**, where researchers used it to grow a living, three-dimensional replica of her cancer: a **patient-derived tumor organoid** (PDTO). Within three weeks, this miniature tumor — no larger than a grain of sand — was expanding in a dish, faithfully recapitulating the architecture, gene expression profile, and drug sensitivity of the original malignancy (van de Wetering et al., 2015).
 
