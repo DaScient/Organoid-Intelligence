@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Shenzhen of Living Chips
+## Shenzhen of Living Chips
 
 In September 2024, a team at FinalSpark SA in Lausanne, Switzerland, announced that their "Neuroplatform" — the world's first remotely accessible biological processor — had been operating continuously for over four months, serving living neuron-based computing units to researchers around the globe. Each biological processing unit (BPU) consisted of roughly 10,000 neurons cultured on a multi-electrode array, fed by a microfluidic perfusion system, and monitored by automated quality control software. When a BPU degraded beyond usable thresholds, the platform automatically flagged it for replacement. A technician would remove the spent culture, seed a fresh one, and within two weeks, a new BPU was online.
 
