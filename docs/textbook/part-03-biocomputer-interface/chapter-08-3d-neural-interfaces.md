@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Electronics That Disappeared
+## Electronics That Disappeared
 
 In 2015, a team at Harvard University led by Charles Lieber unveiled something that seemed to belong more to science fiction than to the pages of *Nature Nanotechnology*. They had built an electronic mesh so thin, so flexible, and so open in its architecture that it could be drawn into a glass syringe, injected through a needle into living brain tissue, and left there — where it would unfurl, integrate with surrounding neurons, and begin recording their electrical whispers as though it had always been part of the tissue itself. There was no scar. No immune rejection. No wall of glial cells entombing the foreign object. The mesh simply *became* part of the brain.
 
