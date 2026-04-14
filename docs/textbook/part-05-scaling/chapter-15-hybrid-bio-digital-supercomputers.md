@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Third Architecture
+## The Third Architecture
 
 In November 2023, a paper appeared in *Nature Electronics* that quietly rewrote the rules of computing architecture. Feng Guo's team at Indiana University had built a system they called **Brainoware** — a device in which a brain organoid, cultured on a multi-electrode array, served as the computational core of a speech recognition system (Cai et al., 2023). The organoid received audio signals converted to electrical stimulation patterns and produced complex spatiotemporal activity in response. A conventional machine learning readout layer — running on a GPU — then interpreted the organoid's activity to classify spoken vowels.
 
