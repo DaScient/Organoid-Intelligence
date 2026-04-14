@@ -9,7 +9,7 @@
 
 ## Opening Vignette: The Language of Nerve Impulses
 
-On a damp afternoon in Cambridge in 1925, Edgar Douglas Adrian threaded a fine capillary electrode into the nerve fibre of a frog's muscle receptor. The oscilloscope trace that flickered before him carried a revelation that would reshape neuroscience: regular, discrete voltage spikes whose frequency rose and fell in lock-step with the stretch applied to the muscle. Adrian was not the first to record nerve impulses — that honour belonged to his mentor Keith Lucas and, before him, to Emil du Bois-Reymond in 1849 — but he was the first to demonstrate unambiguously that the nervous system encodes the *intensity* of a stimulus not through the *size* of individual spikes, which are stereotyped all-or-nothing events, but through the *rate* at which they occur (Adrian, 1926). A gentle stretch produced a lazy trickle of spikes; a strong stretch, a furious barrage. The biological wire, it seemed, spoke in Morse code — and the key parameter was how fast the telegraph operator tapped.
+On a damp afternoon in Cambridge in 1925, Edgar Douglas Adrian threaded a fine capillary electrode into the nerve fibre of a frog's muscle receptor. The oscilloscope trace that flickered before him carried a revelation that would reshape neuroscience: regular, discrete voltage spikes whose frequency rose and fell in lock-step with the stretch applied to the muscle. Adrian was not the first to record nerve impulses — that honor belonged to his mentor Keith Lucas and, before him, to Emil du Bois-Reymond in 1849 — but he was the first to demonstrate unambiguously that the nervous system encodes the *intensity* of a stimulus not through the *size* of individual spikes, which are stereotyped all-or-nothing events, but through the *rate* at which they occur (Adrian, 1926). A gentle stretch produced a lazy trickle of spikes; a strong stretch, a furious barrage. The biological wire, it seemed, spoke in Morse code — and the key parameter was how fast the telegraph operator tapped.
 
 Adrian's "rate code" became dogma for half a century. When he accepted the Nobel Prize in Physiology or Medicine in 1932, he could scarcely have imagined that a rival hypothesis — that the precise *timing* of each spike relative to others might carry additional, even richer, information — would ignite one of neuroscience's most enduring debates. That debate would not fully crystallize until the 1990s, when researchers like William Bialek, Fred Rieke, and Rob de Ruyter van Steveninck showed that individual spikes in the blowfly visual system carry information with sub-millisecond temporal precision far exceeding what a simple rate code could explain (Rieke et al., 1997). Meanwhile, Apostolos Georgopoulos and colleagues (1986) had demonstrated a third strategy: rather than reading a single neuron's rate or timing, the brain distributes information across *populations* of broadly tuned neurons, each contributing a small vote to a collective "population vector" that specifies, say, the direction of an arm reach with remarkable accuracy.
 
@@ -266,7 +266,7 @@ The impact of noise correlations on population coding depends critically on thei
 
 The Fisher information for a correlated population becomes:
 
-$$J(s) = \mathbf{f}'(s)^T \, \mathbf{Q}^{-1} \, \mathbf{f}'(s) \tag{12.18}$$
+$$J(s) = \mathbf{f}'(s)^T \, \mathbf{Q}^{-1} \, \mathbf{f}'(s) \tag{12.17b}$$
 
 where $\mathbf{Q}$ is the $N \times N$ noise covariance matrix. This generalizes Equation 12.16 to the correlated case.
 
@@ -329,7 +329,7 @@ For neural systems, channel capacity represents the theoretical upper bound on i
 
 The channel capacity of a neuron modelled as a Gaussian channel with bandwidth $B$ and signal-to-noise ratio $\text{SNR}$ follows the Shannon-Hartley theorem:
 
-$$C = B \log_2(1 + \text{SNR}) \tag{12.22}$$
+$$C = B \log_2(1 + \text{SNR}) \tag{12.21b}$$
 
 For a neuron with a maximum firing rate of ~200 Hz (effective bandwidth ~100 Hz) and SNR of ~10 dB ($\text{SNR} \approx 10$), this gives $C \approx 100 \times \log_2(11) \approx 346$ bits/s — a rough upper bound that is rarely achieved in practice due to the non-Gaussian, nonlinear, and memory-dependent nature of real spike generation.
 
@@ -687,13 +687,13 @@ def main():
 
     axes[2, 0].hist(isi_A * 1000, bins=50, range=(0, 200), color='C0',
                     alpha=0.8, density=True)
-    axes[2, 0].set_xlabel("Time (s)")
+    axes[2, 0].set_xlabel("ISI (ms)")
     axes[2, 0].set_ylabel("Density")
     axes[2, 0].set_title(f"ISI Distribution — Stim A (CV={np.std(isi_A)/np.mean(isi_A):.2f})")
 
     axes[2, 1].hist(isi_B * 1000, bins=50, range=(0, 200), color='C1',
                     alpha=0.8, density=True)
-    axes[2, 1].set_xlabel("Time (s)")
+    axes[2, 1].set_xlabel("ISI (ms)")
     axes[2, 1].set_ylabel("Density")
     axes[2, 1].set_title(f"ISI Distribution — Stim B (CV={np.std(isi_B)/np.mean(isi_B):.2f})")
 
