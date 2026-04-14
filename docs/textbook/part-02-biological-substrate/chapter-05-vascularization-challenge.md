@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Invisible Barrier
+## The Invisible Barrier
 
 In 1971, a young surgeon at Boston Children's Hospital named Judah **Folkman** published a paper in the *New England Journal of Medicine* that would fundamentally reshape our understanding of how tissues grow — and, decades later, illuminate one of the greatest obstacles facing organoid intelligence.
 
