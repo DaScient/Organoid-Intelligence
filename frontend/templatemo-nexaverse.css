@@ -2251,6 +2251,19 @@ body::-webkit-scrollbar-thumb:hover {
 	background: linear-gradient(180deg, rgba(0, 240, 255, 0.5), rgba(157, 78, 221, 0.5));
 }
 
+/* When neural canvas is present, hide CSS orbs */
+#neuralCanvas ~ .container .ambient-bg,
+body:has(#neuralCanvas) .ambient-bg {
+	display: none;
+}
+
+/* Ensure tilt target cards are positioned for the glow overlay */
+.menu-item,
+.value-card,
+.testimonial-card {
+	position: relative;
+}
+
 /* ==========================================================================
    REDUCED MOTION ACCESSIBILITY
    ========================================================================== */
@@ -2258,9 +2271,9 @@ body::-webkit-scrollbar-thumb:hover {
 	*,
 	*::before,
 	*::after {
-		animation-duration: 0.01ms !important;
+		animation-duration: 0s !important;
 		animation-iteration-count: 1 !important;
-		transition-duration: 0.01ms !important;
+		transition-duration: 0s !important;
 	}
 
 	html {

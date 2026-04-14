@@ -553,10 +553,6 @@ function initCardTilt() {
    var maxDeg = 8;
 
    cards.forEach(function (card) {
-      // Ensure positioned for inner glow pseudo-element
-      if (getComputedStyle(card).position === 'static') {
-         card.style.position = 'relative';
-      }
       card.style.overflow = 'hidden';
 
       // Create inner glow overlay
@@ -750,6 +746,10 @@ function initKeyboardNav() {
       }
 
       // Keys 1-6 to select menu items (only when on menu screen)
+      // Skip if user is typing in a form field
+      var tag = document.activeElement ? document.activeElement.tagName : '';
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || (document.activeElement && document.activeElement.isContentEditable)) return;
+
       var num = parseInt(e.key);
       if (num >= 1 && num <= 6 && !document.querySelector('.content-section.active')) {
          e.preventDefault();
