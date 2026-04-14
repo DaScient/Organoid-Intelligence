@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Squid and the Equation
+## The Squid and the Equation
 
 In the summer of 1939, Alan **Hodgkin** and Andrew **Huxley** traveled to the Marine Biological Laboratory in Plymouth, England, to study the nervous system of the Atlantic squid, *Loligo forbesi*. The squid's giant axon — up to 1 mm in diameter, roughly 1,000 times thicker than a typical mammalian axon — offered an extraordinary experimental opportunity: for the first time, it was possible to insert an electrode *inside* a nerve fiber and measure the voltage changes that accompanied a nerve impulse.
 
