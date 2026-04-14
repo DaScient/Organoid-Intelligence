@@ -7,7 +7,7 @@
 
 ---
 
-## Opening Vignette: The Spark of Life
+## The Spark of Life
 
 In the autumn of 1780, Luigi **Galvani** stood in his laboratory at the University of Bologna, dissecting a frog on a table near an electrostatic machine. When his assistant touched the crural nerve of the frog's leg with a charged scalpel, the leg kicked violently — as if the animal were still alive. Galvani was transfixed. Over the next decade, he would conduct hundreds of experiments — hanging frog legs from iron railings during thunderstorms, touching bimetallic arcs to exposed nerves — and eventually propose the existence of "animal electricity," an intrinsic vital force coursing through living tissue. His rival, Alessandro Volta, disagreed: the electricity, Volta argued, originated not from the animal but from the contact between dissimilar metals. Their dispute would birth the battery, but Galvani's deeper intuition — that electricity and biology were inseparable — would prove prophetic.
 
