@@ -753,6 +753,18 @@ left: 20%;
 animation-delay: -4s;
 }
 
+.card-4 {
+top: 20%;
+right: 8%;
+animation-delay: -1s;
+}
+
+.card-5 {
+bottom: 25%;
+left: 5%;
+animation-delay: -3s;
+}
+
 @keyframes floatCard {
 
 0%,
