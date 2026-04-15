@@ -559,6 +559,24 @@ function initSmoothScrollNav() {
    });
 }
 
+function sendEmail() {
+  const name = document.getElementById('senderName').value;
+  const email = document.getElementById('senderEmail').value;
+  const subject = document.getElementById('emailSubject').value;
+  const message = document.getElementById('emailMessage').value;
+
+  const recipient = "organoid-intelligence@dascient.com";
+  
+  // Construct the body with the sender's name and original message
+  const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+
+  // Encode everything for a URL
+  const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  // Open the user's default email app
+  window.location.href = mailtoLink;
+}
+
 /* --------------------------------------------------------------------------
    INITIALIZATION
    -------------------------------------------------------------------------- */
@@ -572,6 +590,7 @@ function initAll() {
    initHeroParallax();
    initMagneticButtons();
    initSmoothScrollNav();
+   sendEmail();
    initStatsObserver();
    observeReveals();
 }
