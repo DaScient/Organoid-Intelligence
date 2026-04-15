@@ -34,7 +34,7 @@ except ImportError:
 
 # Configuration
 REPO_ROOT = Path(__file__).parent.resolve()
-CHAPTERS_DIR = REPO_ROOT / "textbook" / "chapters"
+CHAPTERS_DIR = REPO_ROOT / "doc" / "textbook"
 APPENDICES_DIR = REPO_ROOT / "textbook" / "appendices"
 OUTPUT_FILE = REPO_ROOT / "organoid_intelligence_textbook.docx"
 
