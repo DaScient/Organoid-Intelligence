@@ -147,13 +147,14 @@ Organoid-Intelligence/
 
 | Section | Audience | Purpose |
 |---------|----------|---------|
+| `capstones/` | Courses | Graded project assignments |
+| `datasets/` | Data Scientists | Link to real OI-relevant datasets |
 | `docs/textbook/` | All | Deep reading, citations, theory |
+| `frontend/` | Developers | HTML, Javascript, and .css |
 | `visualizations/` | Students, Educators | Interactive learning tools |
 | `simulations/` | Researchers, Engineers | Computational experiments |
 | `protocols/` | Lab Scientists | Bench-ready procedures |
 | `starter-packs/` | Beginners → Advanced | Guided learning path |
-| `datasets/` | Data Scientists | Link to real OI-relevant datasets |
-| `capstones/` | Courses | Graded project assignments |
 
 ---
 
