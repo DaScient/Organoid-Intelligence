@@ -59,7 +59,7 @@ The repository brings together 24 chapters across 8 thematic parts, 5 appendices
 #### Part V — Scaling
 | Chapter | Title |
 |---------|-------|
-| [Chapter 13](docs/textbook/part-05-scaling/chapter-13-manufacturing-organoid-systems.md) | Manufacturing Organoid Computing Systems |
+| [Chapter 13](docs/textbook/part-05-scaling/chapter-13-manufacturing-at-scale.md) | Manufacturing at Scale |
 | [Chapter 14](docs/textbook/part-05-scaling/chapter-14-organoid-networks.md) | Organoid Networks and Connectivity |
 | [Chapter 15](docs/textbook/part-05-scaling/chapter-15-hybrid-bio-digital-supercomputers.md) | Hybrid Bio-Digital Supercomputers |
 
