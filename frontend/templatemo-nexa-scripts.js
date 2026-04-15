@@ -332,7 +332,7 @@ function initHeroParallax() {
    var heroVisual = document.querySelector('.intro-hero-visual');
    if (!heroVisual) return;
 
-   var depths = { 'card-1': 20, 'card-2': 30, 'card-3': 15 };
+   var depths = { 'card-1': 20, 'card-2': 30, 'card-3': 15, 'card-4': 25, 'card-5': 18 };
 
    heroVisual.addEventListener('mousemove', function (e) {
       var rect = heroVisual.getBoundingClientRect();
