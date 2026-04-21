@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organoid Intelligence — Biological Computing In Living Systems</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="templatemo-nexaverse.css">
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-ring"></div>
+        <div class="loading-text">Initializing Organoid Intelligence...</div>
+    </div>
+
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <div class="grid-overlay"></div>
+
+    <nav class="site-nav" id="siteNav">
+        <div class="nav-brand">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="navLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#6ee7b7"/>
+                        <stop offset="100%" style="stop-color:#a78bfa"/>
+                    </linearGradient>
+                </defs>
+                <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#navLogoGrad)" stroke-width="3"/>
+                <circle cx="50" cy="50" r="10" fill="url(#navLogoGrad)"/>
+            </svg>
+            <div>
+                <div class="nav-brand-name">Organoid Intelligence</div>
+                <div class="nav-brand-sub">DaScient</div>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="#introduction" class="nav-link active">Introduction</a>
+            <a href="#chapters" class="nav-link">Chapters</a>
+            <a href="#resources" class="nav-link">Resources</a>
+            <a href="#capstones" class="nav-link">Capstones</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header" id="mainHeader">
+            <div class="logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#6ee7b7"/>
+                            <stop offset="100%" style="stop-color:#a78bfa"/>
+                        </linearGradient>
+                    </defs>
+                    <polygon points="50,5 95,30 95,70 50,95 5,70 5,30" fill="none" stroke="url(#logoGradient)" stroke-width="2"/>
+                    <polygon points="50,20 80,37 80,63 50,80 20,63 20,37" fill="none" stroke="url(#logoGradient)" stroke-width="1.5" opacity="0.6"/>
+                    <circle cx="50" cy="50" r="12" fill="url(#logoGradient)" opacity="0.3"/>
+                    <circle cx="50" cy="50" r="6" fill="url(#logoGradient)"/>
+                </svg>
+            </div>
+            <h1 class="brand-name">Organoid Intelligence</h1>
+            <p class="tagline">DaScient</p>
+        </div>
+
+        <div id="contentArea">
+
+            <div class="content-section" id="introduction">
+
+                <div class="intro-hero">
+                    <div class="intro-hero-content">
+                        <span class="intro-badge">DaScient Press · 2026</span>
+                        <h1 class="intro-headline">Biological Computing<br>In <span>Living Systems</span></h1>
+                        <p class="intro-subtext">The first exploratory textbook to treat organoid intelligence as a unified field — bridging neuroscience, bioengineering, computational theory, ethics, and speculative futures into a single pedagogical framework.</p>
+                        <div class="intro-cta-group">
+                            <a href="https://github.com/DaScient/Organoid-Intelligence" target="_blank" class="intro-cta-primary" style="text-decoration:none;">Explore Repository</a>
+                            <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/BOOK_OVERVIEW.md" target="_blank" class="intro-cta-secondary" style="text-decoration:none;">Read Book Overview</a>
+                        </div>
+                    </div>
+                    <div class="intro-hero-visual">
+                        <div class="intro-floating-card card-1">
+                            <span class="card-icon"><svg class="card-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9.5 2 7.5 4 7.5 6.5c0 .5.1 1 .3 1.5C6.1 8.5 5 10 5 11.5c0 1.3.7 2.5 1.8 3.2-.1.4-.3.9-.3 1.3 0 2.2 1.8 4 4 4h1V12"/><path d="M12 2c2.5 0 4.5 2 4.5 4.5c0 .5-.1 1-.3 1.5c1.7.5 2.8 2 2.8 3.5c0 1.3-.7 2.5-1.8 3.2.1.4.3.9.3 1.3c0 2.2-1.8 4-4 4h-1.5V12"/></svg></span>
+                            <span class="card-text">Brain Organoids</span>
+                        </div>
+                        <div class="intro-floating-card card-2">
+                            <span class="card-icon"><svg class="card-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13.5h6L9 22l9.5-12h-6.5L13 2z"/></svg></span>
+                            <span class="card-text">Neural Computing</span>
+                        </div>
+                        <div class="intro-floating-card card-3">
+                            <span class="card-icon"><svg class="card-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2v4a1 1 0 001 1h2a1 1 0 001-1V2"/><path d="M14 7l-4 8"/><circle cx="9" cy="18" r="3"/><path d="M5 21h14"/><path d="M12 16h4"/></svg></span>
+                            <span class="card-text">Living Substrates</span>
+                        </div>
+                        <div class="intro-floating-card card-4">
+                            <span class="card-icon"><svg class="card-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v4"/><circle cx="12" cy="16" r="1"/></svg></span>
+                            <span class="card-text">Bioethics</span>
+                        </div>
+                        <div class="intro-floating-card card-5">
+                            <span class="card-icon"><svg class="card-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/><path d="M2 12h20"/></svg></span>
+                            <span class="card-text">Future Horizons</span>
+                        </div>
+                        <div class="intro-orb"></div>
+                    </div>
+                </div>
+
+                <div class="intro-metrics">
+                    <div class="metric-item">
+                        <span class="metric-value" data-target="24">0</span>
+                        <span class="metric-label">Chapters</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value" data-target="8">0</span>
+                        <span class="metric-label">Thematic Parts</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value" data-target="5">0</span>
+                        <span class="metric-label">Capstone Projects</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value">Open</span>
+                        <span class="metric-label">Source &amp; Apache 2.0</span>
+                    </div>
+                </div>
+
+                <div class="intro-values">
+                    <div class="value-card">
+                        <div class="value-number">I</div>
+                        <h3>Neuroscience &amp; Biology</h3>
+                        <p>From iPSC reprogramming and organoid fabrication to action potentials, synaptic plasticity, and myelination — the biological substrate of living computation.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-number">II</div>
+                        <h3>Engineering &amp; Interfaces</h3>
+                        <p>Multi-electrode arrays, 3D neural probes, optogenetic channels, and hybrid bio-digital architectures that bridge tissue and silicon.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-number">III</div>
+                        <h3>Theory, Ethics &amp; Future</h3>
+                        <p>Reservoir computing, active inference, moral status of organoids, global governance, and the speculative horizon of synthetic minds.</p>
+                    </div>
+                </div>
+
+                <div class="intro-tech">
+                    <p class="tech-label">Disciplines Covered</p>
+                    <div class="tech-marquee">
+                        <div class="tech-track">
+                            <span class="tech-item">Neuroscience</span>
+                            <span class="tech-item">Bioengineering</span>
+                            <span class="tech-item">Electrophysiology</span>
+                            <span class="tech-item">Stem Cell Biology</span>
+                            <span class="tech-item">Reservoir Computing</span>
+                            <span class="tech-item">Optogenetics</span>
+                            <span class="tech-item">Information Theory</span>
+                            <span class="tech-item">Bioethics</span>
+                            <span class="tech-item">Python</span>
+                            <span class="tech-item">Signal Processing</span>
+                            <span class="tech-item">Neuroscience</span>
+                            <span class="tech-item">Bioengineering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section" id="chapters">
+                <div class="section-header">
+                    <h2 class="section-title">Textbook Chapters</h2>
+                    <p class="section-subtitle">24 chapters across 8 thematic parts — from foundations to futures</p>
+                </div>
+
+                <div class="tabs-container">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" onclick="switchTab(this, 'part1')">I · Foundations</button>
+                        <button class="tab-btn" onclick="switchTab(this, 'part2')">II · Substrate</button>
+                        <button class="tab-btn" onclick="switchTab(this, 'part3')">III · Interface</button>
+                        <button class="tab-btn" onclick="switchTab(this, 'part4')">IV · Theory</button>
+                        <button class="tab-btn" onclick="switchTab(this, 'part5')">V · Scaling</button>
+                        <button class="tab-btn" onclick="switchTab(this, 'part6')">VI · Applications</button>
+                        <button class="tab-btn" onclick="switchTab(this, 'part7')">VII · Ethics</button>
+                        <button class="tab-btn" onclick="switchTab(this, 'part8')">VIII · Future</button>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="part1">
+                            <div class="services-list">
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-01-foundations/chapter-01-emergence-biological-computing.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 014 4v12a3 3 0 00-3-3H2z"/><path d="M22 4h-6a4 4 0 00-4 4v12a3 3 0 013-3h7z"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 1: The Emergence of Biological Computing</h4>
+                                        <p>From cybernetics to neuromorphic engineering — tracing the intellectual lineage that leads to organoid intelligence.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-01-foundations/chapter-02-history-brain-organoids.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 014 4v12a3 3 0 00-3-3H2z"/><path d="M22 4h-6a4 4 0 00-4 4v12a3 3 0 013-3h7z"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 2: A History of Brain Organoids</h4>
+                                        <p>Hans Clevers, Yoshiki Sasai, the Lancaster protocol, and the Cortical Labs DishBrain experiments.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-01-foundations/chapter-03-neuroscience-foundations.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 014 4v12a3 3 0 00-3-3H2z"/><path d="M22 4h-6a4 4 0 00-4 4v12a3 3 0 013-3h7z"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 3: Neuroscience Foundations for Biocomputing</h4>
+                                        <p>Action potentials, synaptic transmission, neural coding, and plasticity — the biophysical basis of information processing.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="part2">
+                            <div class="services-list">
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-02-biological-substrate/chapter-04-engineering-brain-organoids.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M8 4c0 2.5 1.5 4.5 4 4.5s4-2 4-4.5"/><path d="M8 20c0-2.5 1.5-4.5 4-4.5s4 2 4 4.5"/><path d="M8 12c0-2 1.5-3.5 4-3.5s4 1.5 4 3.5c0 2-1.5 3.5-4 3.5s-4-1.5-4-3.5z"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 4: Engineering Brain Organoids</h4>
+                                        <p>iPSC reprogramming, neural induction, 3D culture, maturation protocols, and quality control.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-02-biological-substrate/chapter-05-vascularization-challenge.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M8 4c0 2.5 1.5 4.5 4 4.5s4-2 4-4.5"/><path d="M8 20c0-2.5 1.5-4.5 4-4.5s4 2 4 4.5"/><path d="M8 12c0-2 1.5-3.5 4-3.5s4 1.5 4 3.5c0 2-1.5 3.5-4 3.5s-4-1.5-4-3.5z"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 5: The Vascularization Challenge</h4>
+                                        <p>Microfluidic, co-culture, and bioprinting approaches to overcoming the diffusion barrier.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-02-biological-substrate/chapter-06-myelination-signal-propagation.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M8 4c0 2.5 1.5 4.5 4 4.5s4-2 4-4.5"/><path d="M8 20c0-2.5 1.5-4.5 4-4.5s4 2 4 4.5"/><path d="M8 12c0-2 1.5-3.5 4-3.5s4 1.5 4 3.5c0 2-1.5 3.5-4 3.5s-4-1.5-4-3.5z"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 6: Myelination and Signal Propagation</h4>
+                                        <p>The role of myelin in reliable, high-speed neural signal transmission within organoid tissue.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="part3">
+                            <div class="services-list">
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-03-biocomputer-interface/chapter-07-electrophysiological-interfaces.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13.5h6L9 22l9.5-12h-6.5L13 2z"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 7: Electrophysiological Interfaces</h4>
+                                        <p>Multi-electrode arrays (MEAs), patch clamp, and high-density recording systems for neural readout.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-03-biocomputer-interface/chapter-08-3d-neural-interfaces.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13.5h6L9 22l9.5-12h-6.5L13 2z"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 8: Three-Dimensional Neural Interfaces</h4>
+                                        <p>Mesh electronics, flexible probes, and neural dust that penetrate the organoid interior.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-03-biocomputer-interface/chapter-09-optogenetic-communication.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13.5h6L9 22l9.5-12h-6.5L13 2z"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 9: Optogenetic Communication</h4>
+                                        <p>Genetically encoded light-sensitive proteins for optical stimulation and recording with single-cell precision.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="part4">
+                            <div class="services-list">
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-04-computational-theory/chapter-10-reservoir-computing.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/><path d="M7 6v4M5 8h4M17 6v4M15 8h4M7 16v4M17 16v4M15 18h4"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 10: Reservoir Computing</h4>
+                                        <p>Echo state networks, liquid state machines, and biological substrates as computational reservoirs.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-04-computational-theory/chapter-11-active-inference-predictive-processing.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/><path d="M7 6v4M5 8h4M17 6v4M15 8h4M7 16v4M17 16v4M15 18h4"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 11: Active Inference and Predictive Processing</h4>
+                                        <p>Bayesian free-energy minimization and how neural systems continuously update internal world models.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-04-computational-theory/chapter-12-neural-coding-information-theory.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/><path d="M7 6v4M5 8h4M17 6v4M15 8h4M7 16v4M17 16v4M15 18h4"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 12: Neural Coding and Information Theory</h4>
+                                        <p>Rate codes, temporal codes, population codes, and the information-theoretic tools to quantify them.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="part5">
+                            <div class="services-list">
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-05-scaling/chapter-13-manufacturing-at-scale.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20V8l5 4V8l5 4V4h8a2 2 0 012 2v14H2z"/><path d="M6 20v-4h4v4"/><path d="M14 20v-3h3v3"/><path d="M14 13h3v2h-3z"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 13: Manufacturing at Scale</h4>
+                                        <p>Bioreactors, automation, quality control at scale, and cost modeling for organoid production.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-05-scaling/chapter-14-organoid-networks.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20V8l5 4V8l5 4V4h8a2 2 0 012 2v14H2z"/><path d="M6 20v-4h4v4"/><path d="M14 20v-3h3v3"/><path d="M14 13h3v2h-3z"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 14: Organoid Networks</h4>
+                                        <p>Connecting multiple organoids via microfluidic channels, axonal bridges, or electronic relays.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-05-scaling/chapter-15-hybrid-bio-digital-supercomputers.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20V8l5 4V8l5 4V4h8a2 2 0 012 2v14H2z"/><path d="M6 20v-4h4v4"/><path d="M14 20v-3h3v3"/><path d="M14 13h3v2h-3z"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 15: Hybrid Bio-Digital Supercomputers</h4>
+                                        <p>Coupling biological neural networks with conventional silicon processors for hybrid computation.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="part6">
+                            <div class="services-list">
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-06-applications/chapter-16-drug-discovery-personalized-medicine.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 18.5l13-13a4.24 4.24 0 00-6-6l-13 13a4.24 4.24 0 006 6z"/><path d="M12 12L5.5 5.5"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 16: Drug Discovery and Personalized Medicine</h4>
+                                        <p>Patient-derived organoids as living models for disease, drug response, and precision therapeutics.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-06-applications/chapter-17-biological-artificial-intelligence.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 18.5l13-13a4.24 4.24 0 00-6-6l-13 13a4.24 4.24 0 006 6z"/><path d="M12 12L5.5 5.5"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 17: Biological Artificial Intelligence</h4>
+                                        <p>Leveraging biological computation for pattern recognition, sensorimotor learning, and adaptive behavior.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-06-applications/chapter-18-environmental-climate-modeling.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 18.5l13-13a4.24 4.24 0 00-6-6l-13 13a4.24 4.24 0 006 6z"/><path d="M12 12L5.5 5.5"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 18: Environmental and Climate Modeling</h4>
+                                        <p>Energy-efficient biological parallel processing for complex environmental simulations.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="part7">
+                            <div class="services-list">
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-07-ethics-governance/chapter-19-moral-status-organoids.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M4 7h16"/><path d="M4 7l-2 8a4 4 0 004 4h0a4 4 0 004-4L8 7"/><path d="M16 7l-2 8a4 4 0 004 4h0a4 4 0 004-4l-2-8"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 19: The Moral Status of Organoids</h4>
+                                        <p>Can organoids suffer? Do they have interests? Examining when and whether they acquire moral standing.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-07-ethics-governance/chapter-20-donor-rights-genetic-ownership.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M4 7h16"/><path d="M4 7l-2 8a4 4 0 004 4h0a4 4 0 004-4L8 7"/><path d="M16 7l-2 8a4 4 0 004 4h0a4 4 0 004-4l-2-8"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 20: Donor Rights and Genetic Ownership</h4>
+                                        <p>Intellectual property from donor stem cells, informed consent requirements, and genetic privacy.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-07-ethics-governance/chapter-21-global-governance.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M4 7h16"/><path d="M4 7l-2 8a4 4 0 004 4h0a4 4 0 004-4L8 7"/><path d="M16 7l-2 8a4 4 0 004 4h0a4 4 0 004-4l-2-8"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 21: Global Governance</h4>
+                                        <p>Regulatory frameworks, international agreements, and the institutions needed to govern OI responsibly.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="part8">
+                            <div class="services-list">
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-08-future/chapter-22-near-term-future-living-computers.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 22: The Near-Term Future of Living Computers</h4>
+                                        <p>What the first commercial organoid intelligence products will look like and the path to get there.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-08-future/chapter-23-end-of-silicon-monopoly.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 23: The End of the Silicon Monopoly</h4>
+                                        <p>How biological and quantum computing may collectively reshape the global computing landscape.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                                <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/part-08-future/chapter-24-when-synthetic-minds-become-common.md" target="_blank" class="service-row" style="text-decoration:none;color:inherit;">
+                                    <div class="service-row-icon"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
+                                    <div class="service-row-content">
+                                        <h4>Chapter 24: When Synthetic Minds Become Common</h4>
+                                        <p>The broadest questions: How will civilization adapt when synthetic minds are part of everyday life?</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section" id="resources">
+                <div class="section-header">
+                    <h2 class="section-title">Companion Resources</h2>
+                    <p class="section-subtitle">Datasets, capstones, protocols, and more</p>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterGallery('all', this)">All</button>
+                    <button class="filter-btn" onclick="filterGallery('data', this)">Data</button>
+                    <button class="filter-btn" onclick="filterGallery('project', this)">Projects</button>
+                    <button class="filter-btn" onclick="filterGallery('reference', this)">Reference</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <a href="https://github.com/DaScient/Organoid-Intelligence/tree/main/datasets" target="_blank" class="gallery-item" data-category="data" style="text-decoration:none;">
+                        <div class="resource-card-inner">
+                            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="10" width="3" height="8"/><rect x="12" y="6" width="3" height="12"/><rect x="17" y="13" width="3" height="5"/></svg>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h4>Datasets Index</h4>
+                            <p>Curated real-world &amp; simulated datasets</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/DaScient/Organoid-Intelligence/tree/main/capstones" target="_blank" class="gallery-item" data-category="project" style="text-decoration:none;">
+                        <div class="resource-card-inner">
+                            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 10v6"/></svg>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h4>Capstone Projects</h4>
+                            <p>5 integrative assignments</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/docs/textbook/BOOK_OVERVIEW.md" target="_blank" class="gallery-item" data-category="reference" style="text-decoration:none;">
+                        <div class="resource-card-inner">
+                            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4a3 3 0 013 3v13a2 2 0 00-2-2H4z"/><path d="M20 4h-4a3 3 0 00-3 3v13a2 2 0 012-2h5z"/></svg>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h4>Book Overview</h4>
+                            <p>Full textbook structure &amp; pedagogy</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/CONTRIBUTING.md" target="_blank" class="gallery-item" data-category="reference" style="text-decoration:none;">
+                        <div class="resource-card-inner">
+                            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 17a4 4 0 01-8 0c0-2.2 1.8-4 4-4"/><path d="M13 17a4 4 0 008 0c0-2.2-1.8-4-4-4"/><circle cx="7" cy="9" r="3"/><circle cx="17" cy="9" r="3"/></svg>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h4>Contributing Guide</h4>
+                            <p>How to contribute to OI</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/CITATION.cff" target="_blank" class="gallery-item" data-category="reference" style="text-decoration:none;">
+                        <div class="resource-card-inner">
+                            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h4>Citation</h4>
+                            <p>How to cite this work</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/LICENSE" target="_blank" class="gallery-item" data-category="reference" style="text-decoration:none;">
+                        <div class="resource-card-inner">
+                            <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M4 7h16"/><path d="M4 7l-2 8a4 4 0 004 4h0a4 4 0 004-4L8 7"/><path d="M16 7l-2 8a4 4 0 004 4h0a4 4 0 004-4l-2-8"/></svg>
+                        </div>
+                        <div class="gallery-overlay">
+                            <h4>License</h4>
+                            <p>Apache License 2.0</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="content-section" id="capstones">
+                <div class="section-header">
+                    <h2 class="section-title">Capstone Projects</h2>
+                    <p class="section-subtitle">Five integrative projects spanning the entire textbook</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/capstones/capstone-01-foundations.md" target="_blank" class="testimonial-card" style="text-decoration:none;color:inherit;">
+                        <p class="testimonial-text">Build a complete Hodgkin-Huxley neuron model from scratch in Python, analyze its computational properties, and construct a small coupled-neuron network exhibiting emergent synchronization.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#6ee7b722,#a78bfa22);border-radius:50%;width:50px;height:50px;color:#6ee7b7;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9.5 2 7.5 4 7.5 6.5c0 .5.1 1 .3 1.5C6.1 8.5 5 10 5 11.5c0 1.3.7 2.5 1.8 3.2-.1.4-.3.9-.3 1.3 0 2.2 1.8 4 4 4h1V12"/><path d="M12 2c2.5 0 4.5 2 4.5 4.5c0 .5-.1 1-.3 1.5c1.7.5 2.8 2 2.8 3.5c0 1.3-.7 2.5-1.8 3.2.1.4.3.9.3 1.3c0 2.2-1.8 4-4 4h-1.5V12"/></svg></div>
+                            <div class="author-info">
+                                <h5>Capstone 1 — Foundations</h5>
+                                <p>Hodgkin-Huxley Neuron Simulation · Chapters 1–3</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/capstones/capstone-02-biological-substrate.md" target="_blank" class="testimonial-card" style="text-decoration:none;color:inherit;">
+                        <p class="testimonial-text">Design a comprehensive end-to-end protocol for generating, culturing, and maturing cortical brain organoids from iPSCs — including a vascularization strategy addressing the diffusion barrier.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#6ee7b722,#a78bfa22);border-radius:50%;width:50px;height:50px;color:#6ee7b7;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M8 4c0 2.5 1.5 4.5 4 4.5s4-2 4-4.5"/><path d="M8 20c0-2.5 1.5-4.5 4-4.5s4 2 4 4.5"/><path d="M8 12c0-2 1.5-3.5 4-3.5s4 1.5 4 3.5c0 2-1.5 3.5-4 3.5s-4-1.5-4-3.5z"/></svg></div>
+                            <div class="author-info">
+                                <h5>Capstone 2 — Biological Substrate</h5>
+                                <p>Organoid Fabrication &amp; Maturation Plan · Chapters 4–6</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/capstones/capstone-03-biocomputer-interface.md" target="_blank" class="testimonial-card" style="text-decoration:none;color:inherit;">
+                        <p class="testimonial-text">Design and implement a complete data-acquisition and signal-processing pipeline for multi-electrode array (MEA) recordings from brain organoids — from spike detection to network analysis.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#6ee7b722,#a78bfa22);border-radius:50%;width:50px;height:50px;color:#6ee7b7;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4.5 13.5h6L9 22l9.5-12h-6.5L13 2z"/></svg></div>
+                            <div class="author-info">
+                                <h5>Capstone 3 — Biocomputer Interface</h5>
+                                <p>MEA Recording &amp; Signal Processing Pipeline · Chapters 7–9</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/capstones/capstone-04-computational-theory.md" target="_blank" class="testimonial-card" style="text-decoration:none;color:inherit;">
+                        <p class="testimonial-text">Implement a complete reservoir computing system in Python, benchmark it on canonical tasks, and compare engineered vs. biologically constrained reservoir architectures.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#6ee7b722,#a78bfa22);border-radius:50%;width:50px;height:50px;color:#6ee7b7;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg></div>
+                            <div class="author-info">
+                                <h5>Capstone 4 — Computational Theory</h5>
+                                <p>Reservoir Computing System · Chapters 10–12</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/DaScient/Organoid-Intelligence/blob/main/capstones/capstone-05-final-project.md" target="_blank" class="testimonial-card" style="text-decoration:none;color:inherit;">
+                        <p class="testimonial-text">Design a complete, integrated OI system — from biological substrate to computational output — synthesizing knowledge from all eight parts into a coherent engineering proposal with ethical analysis.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#6ee7b722,#a78bfa22);border-radius:50%;width:50px;height:50px;color:#6ee7b7;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 10v6"/></svg></div>
+                            <div class="author-info">
+                                <h5>Capstone 5 — Final Project</h5>
+                                <p>Integrated OI System Design · Chapters 1–24</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="content-section" id="about">
+                <div class="section-header">
+                    <h2 class="section-title">About the Textbook</h2>
+                    <p class="section-subtitle">Author, structure, and pedagogical philosophy</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Organoid Intelligence: Biological Computing In Living Systems</h3>
+                        <p><strong>Author:</strong> Don M. Tadaya &nbsp;|&nbsp; <strong>Publisher:</strong> DaScient Press Ltd.</p>
+                        <p>The first exploratory textbook to treat <strong>organoid intelligence (OI)</strong> as a unified field — bridging neuroscience, bioengineering, computational theory, ethics, and speculative futures into a single pedagogical framework.</p>
+                        <p>Designed for upper-division undergraduates, graduate students, postdoctoral researchers, and industry engineers who wish to understand, contribute to, or critically evaluate one of the most provocative frontiers in 21st-century computing.</p>
+                        <p>The book asks a deceptively simple question: <em>Can living brain tissue compute?</em> And if so, what does that mean — for science, for technology, and for humanity?</p>
+                        <p style="margin-top:1.5rem;"><strong>Pedagogical Features:</strong> Anecdotes, worked examples, Python code exercises, discussion questions, annotated further reading, and contributor placeholders for community expansion.</p>
+                    </div>
+                    <div class="about-image">
+                        <div class="about-parts-list">
+                            <div class="about-part-item"><span class="about-part-num">I</span><span>Foundations</span><span class="about-part-ch">Ch 1–3</span></div>
+                            <div class="about-part-item"><span class="about-part-num">II</span><span>Biological Substrate</span><span class="about-part-ch">Ch 4–6</span></div>
+                            <div class="about-part-item"><span class="about-part-num">III</span><span>Biocomputer Interface</span><span class="about-part-ch">Ch 7–9</span></div>
+                            <div class="about-part-item"><span class="about-part-num">IV</span><span>Computational Theory</span><span class="about-part-ch">Ch 10–12</span></div>
+                            <div class="about-part-item"><span class="about-part-num">V</span><span>Scaling</span><span class="about-part-ch">Ch 13–15</span></div>
+                            <div class="about-part-item"><span class="about-part-num">VI</span><span>Applications</span><span class="about-part-ch">Ch 16–18</span></div>
+                            <div class="about-part-item"><span class="about-part-num">VII</span><span>Ethics &amp; Governance</span><span class="about-part-ch">Ch 19–21</span></div>
+                            <div class="about-part-item"><span class="about-part-num">VIII</span><span>Future</span><span class="about-part-ch">Ch 22–24</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section" id="contact">
+                <div class="section-header">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-subtitle">Questions, contributions, and collaboration</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="senderName" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="senderEmail" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="emailSubject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="emailMessage" placeholder="Your Message"></textarea>
+                        </div>
+                        <button class="submit-btn" id="submitEmailBtn">Send Message</button>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>1200 Pearl St, Boulder, CO 80302</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg></div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>organoid-intelligence@dascient.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg></div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <p><a href="https://github.com/DaScient/Organoid-Intelligence" target="_blank" style="color:#6ee7b7;">DaScient/Organoid-Intelligence</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer" id="mainFooter">
+            <p>Copyright &copy; 2026 <a href="https://dascient.com" target="_blank">DaScient, LLC</a>. All rights reserved.</p>
+        </footer>
+    </div>
+<script src="templatemo-nexa-scripts.js"></script>
+</body>
+</html>
