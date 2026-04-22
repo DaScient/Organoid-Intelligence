@@ -10,6 +10,10 @@
 
 ---
 
+## The Book
+
+You can support our work by purchasing an ebook or physical copy on [Amazon](https://www.amazon.com/dp/B0GY258DJQ) and [Barnes & Noble](https://www.barnesandnoble.com/w/organoid-intelligence-don-m-tadaya/1149944275).
+
 ## About This Repository
 
 This repository is the official open-source companion to **"Organoid Intelligence: Biological Computing In Living Systems"** — a textbook that explores the frontier of biological computing using brain organoids. It bridges cutting-edge neuroscience, bioengineering, computational theory, and ethics to present a comprehensive treatment of Organoid Intelligence (OI) as an emerging paradigm in computing.
