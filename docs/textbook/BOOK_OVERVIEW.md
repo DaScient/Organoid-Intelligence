@@ -3,7 +3,9 @@
 ## Organoid Intelligence: Biological Computing In Living Systems
 
 **Author:** Don M. Tadaya
+
 **Publisher:** DaScient Press Ltd.
+
 **Copyright © 2026 DaScient, LLC**
 
 **Ebook available - Amazon and Barnes & Noble:** [Kindle](https://www.amazon.com/Organoid-Intelligence-Biological-Computing-Systems-ebook/dp/B0GY258DJQ) & [Nook](https://www.barnesandnoble.com/w/organoid-intelligence-don-m-tadaya/1149944275?ean=2940185063125)
